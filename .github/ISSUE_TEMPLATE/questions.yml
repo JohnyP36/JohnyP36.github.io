@@ -10,7 +10,7 @@ body:
           required: true
         - label: I performed a cursory search of the issue tracker to avoid opening a duplicate issue
           required: true
-        - label: This is not a bug report, enhancement or a feature request. -- otherwise use this [template](https://github.com/JohnyP36/JohnyP36.github.io/issues/new?assignees=&template=Other.yml)
+        - label: This is not a bug report, enhancement or a feature request. -- otherwise use this [template](https://github.com/JohnyP36/JohnyP36.github.io/issues/new?assignees=&labels=&template=other.yml)
           required: true
 
   - type: textarea
