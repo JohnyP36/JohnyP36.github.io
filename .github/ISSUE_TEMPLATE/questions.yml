@@ -37,9 +37,10 @@ body:
     validations: 
       required: false
    
-  - type: input
+  - type: textarea
     attributes:
       label: Notes
       description: Is there anything else you want to say? Put it here.
+      render: markdown
     validations: 
       required: false
