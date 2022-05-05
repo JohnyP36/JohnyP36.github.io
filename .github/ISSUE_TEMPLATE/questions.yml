@@ -6,9 +6,7 @@ body:
     attributes:
       label: Prerequisites
       options:
-        - label: I've read the [Code of Conduct](https://github.com/JohnyP36/JohnyP36.github.io
-/blob/main/.github/CODE_OF_CONDUCT.md) and the [Contributing Guidelines](https://github.com/JohnyP36/JohnyP36.github.io
-/blob/main/.github/CONTRIBUTING.md)
+        - label: I've read the [Code of Conduct](https://github.com/JohnyP36/JohnyP36.github.io/blob/main/.github/CODE_OF_CONDUCT.md) and the [Contributing Guidelines](https://github.com/JohnyP36/JohnyP36.github.io/blob/main/.github/CONTRIBUTING.md)
           required: true
         - label: I performed a cursory search of the issue tracker to avoid opening a duplicate issue
           required: true
