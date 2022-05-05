@@ -14,7 +14,7 @@ body:
         - label: I'm using the latest version of your website
           required: true
 
-  - type: checkboxes
+  - type: dropdown
     attributes: 
       label: What kind of problem do you encounter?
       multiple: true
@@ -27,7 +27,7 @@ body:
     validations:
       required: true
       
-  - type: checkboxes
+  - type: dropdown
     attributes: 
       label: Which browser do you use?
       multiple: true
