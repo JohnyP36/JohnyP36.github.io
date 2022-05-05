@@ -5,9 +5,9 @@
 > To avoid being banned, don't constantly re-open or create new (related) issue reports or pull requests.  
 ### Prerequisites
 <!-- Check the appropriate boxes before you submit your issue -->
-- [ ] I've read the [Code of Conduct](https://github.com/JohnyP36/Connect4/blob/main/.github/CODE_OF_CONDUCT.md) and the [Contributing Guidelines](https://github.com/JohnyP36/Connect4/blob/main/.github/CONTRIBUTING.md)
+- [ ] I've read the [Code of Conduct](https://github.com/JohnyP36/JohnyP36.github.io/blob/main/.github/CODE_OF_CONDUCT.md) and the [Contributing Guidelines](https://github.com/JohnyP36/JohnyP36.github.io/blob/main/.github/CONTRIBUTING.md)
 - [ ] This is more than one or two issue(s)
-    - Otherwise open a [new issue](https://github.com/JohnyP36/Connect4/issues/new/choose)
+    - Otherwise open a [new issue](https://github.com/JohnyP36/JohnyP36.github.io/issues/new/choose)
 - [ ] I performed a cursory search of the issue tracker to avoid opening a duplicate issue
     - Your issue may already be reported.
 - [ ] I tried to reproduce the issue when...
@@ -19,6 +19,13 @@
 ### Describe the problem
 <!-- [Be as clear as possible: nobody can read mind, and nobody is looking at your issue over your shoulder.] --> 
 <!-- Just a description of the issue when you visit the site. Or steps on reproducing this  -->
+
+### Additional information 
+<!-- Put here which browser(s) you are using and whih version, and what the device is: desktop or mobile. 
+<!-- delete the "e.g." and put between the "**...**" or "_**...**_ your own information. Change the number of your browser version if it's not 101 --> 
+| Browser name & version | Device | Operating System |
+| :---                   |       :---:       |             ---: |
+| \`e.g. **MS Edge** 101\`   | \`e.g. _**Desktop**_\`| \`e.g. **Windows 10**, 21H2\` | 
 
 #### Screenshot(s)
 <!-- [Screenshot(s) for difficult to describe visual issues are **mandatory**.
