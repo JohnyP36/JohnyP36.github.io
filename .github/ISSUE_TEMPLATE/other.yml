@@ -1,5 +1,6 @@
 name: Other
 description: Template for reporting a bug or an optimalisation of the code or requesting a feature.
+label: 
 body:
   - type: checkboxes
     attributes:
