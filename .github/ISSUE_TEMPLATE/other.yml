@@ -1,0 +1,92 @@
+name: Other
+description: Template for reporting a bug or an optimalisation of the code or requesting a feature.
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I've read the [Code of Conduct](https://github.com/JohnyP36/JohnyP36.github.io/blob/main/.github/CODE_OF_CONDUCT.md) and the [Contributing Guidelines](https://github.com/JohnyP36/JohnyP36.github.io/blob/main/.github/CONTRIBUTING.md)
+          required: true
+        - label: I performed a cursory search of the issue tracker to avoid opening a duplicate issue
+          required: true
+        - label: This is not a question. -- otherwise use this [template](https://github.com/JohnyP36/JohnyP36.github.io/issues/new?assignees=&labels=question&template=questions.yml)
+          required: true
+        - label: I'm using the latest version of your website
+          required: true
+
+  -type: checkboxes
+   attributes: 
+     label: What kind of problem do you encounter?
+     multiple: true
+     options:
+        - a bug
+        - feature request
+        - enhancement
+        - optimalization of the code
+        - other ... (Please describe below what your point is)
+    validations:
+      required: true
+      
+  -type: checkboxes
+   attributes: 
+     label: Which browser do you use?
+     multiple: true
+     options:
+        - Microsoft Edge
+        - Google Chrome
+        - Firefox
+        - Safari 
+        - another browser (Please describe below which browser)
+    validations:
+      required: true
+      
+  - type: input
+    attributes:
+      label: What is the version of your browser?
+      placeholder: ex. 101.0.1210.32 (Official build) (64-bits)
+    validations:
+      required: true
+      
+  - type: dropdown
+    attributes:
+      label: Which device do you use?
+      multiple: false
+      options:
+        - Desktop
+        - Mobile
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Description of the bug/problem/feature request
+      description: |
+        Be as clear as possible. Nobody can read your mind.
+        If it is a bug, please, also describe what's wrong, what happenend, what you want to happen and the solution for that. 
+        This also applies to a porposal: be as specific as possible!
+      placeholder: |
+        Put here your description of the bug or your proposal.        
+    validations:
+      required: true
+      
+  - type: textarea
+    attributes: 
+      label: Screenshot(s)
+      description: Screenshot(s) for difficult to describe visual issues are **mandatory**.
+      value: |
+       <details>
+       <summary>Screenshot(s)</summary>
+       
+       <!-- drag-and-drop screenshot here -->
+       
+       </details>
+    validations: 
+      required: false
+   
+  - type: textarea
+    attributes:
+      label: Notes
+      description: Is there anything else you want to say? Put it here.
+      render: markdown
+    validations: 
+      required: false
