@@ -1,0 +1,47 @@
+name: Questions
+description: Template for asking questions about my repro and lists and other kinds of help support
+labels: question
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I've read the [Code of Conduct](https://github.com/JohnyP36/JohnyP36.github.io
+/blob/main/.github/CODE_OF_CONDUCT.md) and the [Contributing Guidelines](https://github.com/JohnyP36/JohnyP36.github.io
+/blob/main/.github/CONTRIBUTING.md)
+          required: true
+        - label: I performed a cursory search of the issue tracker to avoid opening a duplicate issue
+          required: true
+        - label: This is not a bug report, enhancement or a feature request. -- otherwise use this [template](https://github.com/JohnyP36/JohnyP36.github.io/issues/new?assignees=&template=Other.yml)
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Your Question(s)
+      description: |
+        Be as clear as possible. Nobody can read your mind.
+      placeholder: |
+        Put here your question(s)
+    validations:
+      required: true
+      
+  - type: textarea
+    attributes: 
+      label: Screenshot(s)
+      description: Screenshot(s) for difficult to describe visual issues are **mandatory**.
+      value: |
+       <details>
+       <summary>Screenshot(s)</summary>
+       
+       <!-- drag-and-drop screenshot here -->
+       
+       </details>
+    validations: 
+      required: false
+   
+  - type: input
+    attributes:
+      label: Notes
+      description: Is there anything else you want to say? Put it here.
+    validations: 
+      required: false
