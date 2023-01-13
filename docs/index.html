@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html itemscope="" itemtype="https://schema.org/WebPage" lang="en-Us">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet'>
@@ -10,34 +10,288 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
     <style>
-      body {background-color: rgb(249,249,249); margin: 0px;}
 
-      .topnav {background-color: rgb(0,0,0); overflow: hidden;}
-      .topnav > a {float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
-      .topnav > a:hover {background-color: #ddd; color: black;}
-      .topnav > a.active {background-color: #04AA6D; color: white;}
+      html { font-size: 16px; font-family: sans-serif; }
+      body { margin: 0; padding: 0; height: 100%; } 
+      article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+      svg:not(:root) { overflow: hidden; } 
+      
+      .zba1 { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-direction: column; height: 100vh; }
+      .zba2 { align-items: center; height: 64px; display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: center; padding: 0 12px; width: 100%; }
+      .zba3 { position: fixed; top: 0; z-index: 21; left: 0; }
+      .zba4 { overflow: hidden; overflow-wrap: break-word; }
+      .zba5 { font-family: 'Droid Sans'; font-size: 13pt; }
+      .zba7 { padding-right: 0; padding-left: 16px; top: 64px; left: 0; position: fixed; transition: opacity 0.5s,padding-left .125s; white-space: nowrap; width: 100%; z-index: 20; }
+      .zba9 { color: rgba(255,255,255,1); font-family: 'Roboto Slab'; font-weight: 300; font-size: 15pt; line-height: 1.4; display: table-cell; height: 56px; max-width: 380px; text-overflow: ellipsis; vertical-align: middle; white-space: nowrap; }
+      .zba10 { color: inherit; }
+      .zba11 { display: inline-block; max-height: 56px; max-width: 225px; padding: 8px 4px 8px 12px; vertical-align: middle; }
+      .zba12 { display: inline-block; line-height: 1; max-width: 380px; outline: none; overflow: hidden; padding: 16px 12px; text-decoration: none; text-overflow: ellipsis; vertical-align: middle; }
+      .zba13 { display: table-cell; text-align: right; vertical-align: middle; }
+      .zba14 { margin: 0; padding: 0; list-style-type: none; }
+      .zba15 { display: inline-block; max-width: 300px; overflow: visible; position: relative; text-align: left; transition: opacity 0ms 300ms; vertical-align: middle; white-space: nowrap; }
+      .zba16 { border-bottom-color: rgba(95,182,149,1); border-bottom-style: solid; border-bottom-width: 8px; padding-top: 14px; padding-bottom: 6px; padding-left: 2px; padding-right: 2px; margin-left: 10px; margin-right: 10px; color: rgba(255,255,255,1); font-family: 'Droid Sans'; font-weight: 700; font-size: 12pt; display: inline-block; overflow: hidden; position: relative; text-overflow: ellipsis; white-space: nowrap; text-decoration: inherit; font-style: inherit; }
+      .zba18 { display: inline-block; vertical-align: top; position: relative; }
+      .zba19 { text-decoration: inherit; color: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; line-height: 28px; white-space: nowrap; display: inline-block; max-width: 240px; position: relative; vertical-align: top; text-overflow: ellipsis; cursor: pointer; overflow: hidden; }
+      .zba20 { background-color: transparent; cursor: default; display: inline-block; height: 2px; position: relative; vertical-align: middle; width: 2px; }
+      .zba17 { border-bottom-color: rgba(255,255,255,0); border-bottom-style: solid; border-bottom-width: 8px; padding-top: 14px; padding-bottom: 6px; padding-left: 2px; padding-right: 2px; margin-left: 10px; margin-right: 10px; color: rgba(255,255,255,1); font-family: 'Droid Sans'; font-weight: 700; font-size: 12pt; display: inline-block; overflow: hidden; vertical-align: middle; position: relative; text-overflow: ellipsis; white-space: nowrap; text-decoration: inherit; font-style: inherit; }
+      .zba21 { line-height: 28px; cursor: pointer; display: inline-block; margin-left: 3px; outline: none; overflow: hidden; padding-left: 4px; padding-right: 2px; vertical-align: top; }
+      .zba22 { height: 12px; transform: scale(2); vertical-align: middle; width: 12px; }
+      .zba23 { transition: transform 0.25s cubic-bezier(0.4,0,0.2,1); }
+      .zba24 { display: table-cell; position: relative; right: 0; top: 0; width: 48px; z-index: 25; }
+      .zba25 { height: 48px; margin: 4px 0; opacity: 1; vertical-align: middle; z-index: 25; fill: currentColor; color: rgba(0,0,0,.54); -moz-user-select: none; transition: background .3s; border: 0; border-radius: 50%; cursor: pointer; display: inline-block; flex-shrink: 0; outline: none; overflow: hidden; position: relative; text-align: center; width: 48px; }
+      .zba26 { background-image: radial-gradient(circle farthest-side,rgba(0,0,0,.12),rgba(0,0,0,.12) 80%,rgba(0,0,0,0) 100%); transform: translate(-50%,-50%) scale(0); transition: opacity .2s ease,visibility 0s ease .2s,-webkit-transform 0s ease .2s; background-size: cover; left: 0; opacity: 0; pointer-events: none; position: absolute; top: 0; visibility: hidden; }
+      .zba27 { position: relative; top: 50%; }
+      .zba28 { display: inline-block; position: relative; }
+      .zba29 { color: rgba(255,255,255,1); }
+      .zba30 { opacity: 1; bottom: 0; height: 100%; left: 0; position: absolute; right: 0; top: 0; transition: opacity .125s; width: 100%; z-index: -10; }
+      .zba31 { margin-top: 64px; flex: 0 0 auto; outline: none; }
+      .zba32 { padding-bottom: 1.5rem; padding-top: 1.5rem; background-size: cover; display: table; position: relative; table-layout: fixed; width: 100%; }
+      .zba32::before, .zba33::before, .zba34::before, .zba35::before, .zba36::before, .zba36::after, .zba44::before, .zba45::before, .zba46::before { bottom: 0; content: ""; display: none; left: 0; pointer-events: none; position: absolute; right: 0; top: 0; }
+      .zba33 { padding-bottom: 0; padding-top: 0; background-size: cover; display: table; position: relative; table-layout: fixed; width: 100%; }
+      .zba34 { padding-bottom: 1.5rem; padding-top: 1.5rem; background-size: cover; display: table; position: relative; table-layout: fixed; width: 100%; }
+      .zba35 { padding-bottom: 1.5rem; padding-top: 1.5rem; background-size: cover; display: table; position: relative; table-layout: fixed; width: 100%; }
+      section[id="v1"] .zba36::before { opacity: 0.7; background-color: rgba(33,33,33,1); display: block; }
+      section[id="v3"] .zba36::before { opacity: 0.0; background-color: rgba(255,255,255,1); display: block; }
+      section[id="v6"] .zba36::before { opacity: 0.0; background-color: rgba(255,255,255,1); display: block; }
+      section[id="v7"] .zba36::before { opacity: 0.0; background-color: rgba(255,255,255,1); display: block; }
+      section[id="v8"] .zba36::before { opacity: 0.0; background-color: rgba(255,255,255,1); display: block; }
+      .zba36 { display: table-cell; height: 100%; left: 0; pointer-events: none; position: absolute; top: 0; width: 100%; }
+      .zba31 section:first-child .zba37 { padding-top: 56px; }
+      .zba37 { display: table-cell; vertical-align: middle; width: 100%; }
+      .zba38 { padding-left: 48px; padding-right: 48px; outline: 0; margin-left: auto; margin-right: auto; width: 100%; margin-top: 0; margin-bottom: 0; max-width: 1280px; *zoom: 1; }
+      .zba39 { width: 100%; box-sizing: border-box; display: inline-block; padding-left: 0; padding-right: 0; position: relative; vertical-align: top; }
+      .zba40 { padding-left: 1.25%; padding-right: 1.25%; }
+      .zba41 { width: 100%; margin-top: 0; margin-bottom: 0; max-width: 1280px; *zoom: 1; }
+      .zba42 { width: 100%; white-space: pre-wrap; box-sizing: border-box; display: inline-block; padding-left: 0; padding-right: 0; position: relative; vertical-align: top; }
+      .zba43 { width: 100%; box-sizing: border-box; white-space: pre-wrap; }
+      .zba44 { background-color: transparent; padding: 8px; word-wrap: break-word; position: relative; width: 100%; }
+      .zba45:first-child { margin-top: 0; padding-top: 0; }
+      .zba45 { color: rgba(255,255,255,1); font-family: 'Droid Sans'; font-size: 13pt; line-height: 1.55; text-decoration: inherit; font-style: inherit; font-weight: inherit; font-variant-ligatures: none; margin: 0; outline: none; position: relative; }
+      .zba46 { color: rgba(255,255,255,1); font-family: 'Roboto Slab'; font-size: 9pt; line-height: 1.2; margin-top: 0px; text-decoration: inherit; font-style: inherit; font-weight: inherit; font-variant-ligatures: none; margin: 0; outline: none; position: relative; }
+      .zba47 { font-size: 16.0pt; }
+      .zba48 { color: inherit; }
+      .zba49 { pointer-events: all; color: inherit; text-decoration: none; }
 
 
-      settings { display: flex; flex-direction: row; }
-      settings section { flex: 1; }
+
+      .zbb1 { flex: 1 0 auto; }
+
     </style>
   </head>
   <body>
-    <header style="background-color: rgb(255,229,153); width: 100%; height: 64px; position: fixed; top: 0; text-align: center;">
-	<p style="color: rgb(0,0,0); font-family: Droid Sans; font-size: 13pt; padding-top: 5px;"> Please note that this site works the best on a computer (1920 x 1080 px). </p></header>
-        
-    <div class="topnav">tt</div>
+    <div> <div> <div> <div>
+      <div class="zba1" data-uses-custom-theme="false" data-legacy-theme-name="Level" data-legacy-theme-font-kit="Slab" data-legacy-theme-color-kit="Custom">
+        <header id="atIdViewHeader" style="box-sizing: border-box;">
+	  <div>
+            <div class="zba2 zba3" style="background-color: rgb(255, 229, 153);" role="region" aria-labelledby="i1" tabbable="" tabindex="0">
+              <p id="i1" class="zba4 zba5" style="color: rgb (0, 0, 0);">
+                Please note that this site works best on a computer (1920x1080p).
+              </p>
+            </div>
+          </div>
+          <div class="zba6" data-top-navigation="true" data-is-preview="false" style="box-sizing: border-box;">
+            <div class="zba7" style="background-color: rgb(0, 0, 0);" aria-hidden="false">
+              <div class="zba8">
+                <div class="zba9">
+                  <a class="zba10" href="/view/fav-sites/home" aria-hidden="false" tabindex="0">
+                    <img class="zba11" src="https://lh5.googleusercontent.com/B7TZ4MAZBtC7LYeGoSMNxoozESVisnYSIxYRCC7qHt0Bn5OjqmTfWGTs0GmpMTcbUcyLq-aFTtoHkGehjqFYr_OC7UbY3TTy1R2duCJLgoMUtksK_z-_wSs6xEbMRjOa8BDt5Mnn4Uw=w16383" role="img" aria-label="Site home">
+                    <span class="zba12">Favorite sites</span>
+                  </a>
+                </div>
+                <nav id="WDxLfe" class="zba13" data-is-preview="false" style="visibility: visible;" role="navigation" tabindex="-1">
+                  <ul class="zba14">
+                    <li class="zba15" data-nav-level=1">
+                      <div class="zba16" aria-current="true">
+                        <div class="zba18> 
+                          <a class="zba19" role="link" tabindex="0" data-navtype="1" aria-selected="true" href="/view/fav-sites/home" data-url="/view/fav-sites/home" data-type="1" data-level="1" style="">Home</a>
+                      </div> </div>
+                      <div class="zba20"></div>
+                    </li>
+                    <li class="zba15" data-nav-level=1">
+                      <div class="zba17>
+                        <div class="zba18> 
+                          <a class="zba19" role="link" tabindex="0" data-navtype="1" aria-selected="false" aria-expanded="false" aria-haspopup="true" href="/view/fav-sites/handy-sites" data-url="/view/fav-sites/handy-sites" data-type="1" data-level="1" style="">Handy Sites</a>
+                          <div class="zba21" role="presentation" title="Expand/collapse"> 
+                            <svg class="zba22" viewbox="0 0 24 24" stroke="currentColor" focusable="false">
+                              <g transform="translate(9.7,12) rotate(45)">
+                                <path class="zba23" d="M-4.2 0 L4.2 0" stroke-width="2"></path>
+                              </g>
+                              <g transform="translate(14.3,12) rotate(45)">
+                                <path class="zba23" d="M-4.2 0 L4.2 0" stroke-width="2"></path>                                
+                              </g>
+                            </svg>
+                          </div>
+                      </div> </div>
+                      <div class="zba20"></div>
+                    </li>
+                    <li class="zba15" data-nav-level=1">
+                      <div class="zba17>
+                        <div class="zba18> 
+                          <a class="zba19" role="link" tabindex="0" data-navtype="1" href="/view/fav-sites/articles" data-url="/view/fav-sites/articles" data-type="1" data-level="1" style="">Articles</a>
+                      </div> </div>
+                      <div class="zba20"></div>
+                    </li>
+                    <li class="zba15" data-nav-level=1" aria-hidden="false">
+                      <div class="zba17>
+                        <div class="zba18> 
+                          <a class="zba19" role="link" tabindex="0" data-navtype="1" href="/view/fav-sites/videos" data-url="/view/fav-sites/videos" data-type="1" data-level="1" style="">Videos</a>
+                      </div> </div>
+                      <div class="zba20"></div>
+                    </li>
+                    <li class="zba15" data-nav-level=1" aria-hidden="false">
+                      <div class="zba17>
+                        <div class="zba18> 
+                          <a class="zba19" role="link" tabindex="0" data-navtype="1" href="/view/fav-sites/extension" data-url="/view/fav-sites/extension" data-type="1" data-level="1" style="">Extension</a>
+                      </div> </div>
+                    </li>
+                </ul> </nav>
+                <div class="zba24" data-side-navigation="false">
+                  <div class="zba25" role="button" aria-label="Open search bar" aria-disabled="false" tabindex="0" data-tooltip-vertical-offset="-12" data-tooltip-horizontal-offset="0">
+                    <div class="zba26">
+                    <span class="zba27">
+                      <span class="zba28" style="top: -12px">
+                        <svg class="zba29" viewBox="0 0 24 24" focusable="false">
+                          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                        </svg>
+                    </span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="zba30" style="background-color: rgb(0, 0, 0);"></div>
+            </div>
+          </div>
+        </header>
+        <div class="zba31" role="main" tabindex="-1" dir="ltr" aria-hidden="false" style="box-sizing: border-box;">
+          <section id="v1" class="zba32" style="">
+            <div class="zba36" style="background-size: cover; background-position: center top; background-image: url(https://lh5.googleusercontent.com/EZDD7KN5yDgn8hX9vmz0Ihzaz2GHbH_3GK6__QcrBaTtqyJKgrqJQLn_CrtPZ8xjDuQUUHTaHb-99JpXyujwfNMt37NruPOtnur8kH9jvwQxTbMtzttyETESWtRCthzJS4y01gU_KyQ=w16383);">
+              ::before
+            </div>
+            <div class="zba37">
+              <div class="zba38" tabindex="-1">
+                <div class="zba39">
+                  <div class="zba40">
+                    <div class="">
+                      <div class="zba41">
+                        <div id="w1" class="zba42">
+                          <div class="zba43">
+                            <div class="zba44">
+                              <p class="zba45" dir="ltr">
+                                <span class="zba47" style="color: #ffffff; font-family: 'Oswald'; font-weight: normal; vertical-align: baseline;">About</span>
+                              </p>
+                              <small id="x1" class="zba46" dir="ltr" style="display: block;"><br></small>
+                              <small id="x2" class="zba46" dir="ltr" style="display: block;">
+                                <span style="color: #ffffff; font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; vertical-align: baseline;">
+                                  This site has three main goals. <br>First, to serve as a tool to find sites that I think are important. This spans three categories: audio/video, money and social media . <br>You will also find interesting articles on this site. Since these are not written by me, I will always include the url to the original website. Note: some articles are not written in English, but in other languages, such as Dutch. <br>Thirdly, it should be noted that there can be found videos on this site that are originally from YouTube, but are uploaded to this website, as YouTube could potentially remove them (although they are very valuable). Since August 2021 I also include videos from other domains that - I think - are really helpful/interesting. <br>Finally, I also offer a link to another site of mine that is about my extension in the Edge store. This extension makes watching YouTube videos easier. You will reach my site by clicking on 
+                                </span>
+                                <span style="color: #ffffff; font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; vertical-align: baseline;">
+                                  <em>"extension"</em>
+                                </span>
+                                <span style="color: #ffffff; font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; vertical-align: baseline;">at the top right of this webpage.</span>
+                              </small>
+                              <small id="x3" class="zba46" dir="ltr" style="display: block;"><br></small>
+                              <small id="x4" class="zba46" dir="ltr" style="display: block;"><br></small>
+                              <small id="x5" class="zba46" dir="ltr" style="display: block;">
+                                <span style="color: #ffffff; font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; vertical-align: baseline;">
+                                  Below there is the possibility to support me financially via PayPal. You can also subscribe to my YouTube channel. With some embedded playlists from my channel below. The first playlist contains all the videos I made myself. Definitely worth watching and listening! <br>But first, there are three shortcuts to news websites, which view the news from a different angle than is normally done by the mainstream media. <br>And don't forget to follow me on 
+                                </span>
+                                <span class="zba48" style="font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; text-decoration: underline; vertical-align: baseline;">
+                                  <a class="zba49" href="https://www.google.com/url?q=https%3A%2F%2Fgab.com%2FJohnyP&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw0vcghD5GkS3iWcn5dqJtD0" target="_blank">Gab.com</a>
+                                </span>
+                                <span style="color: #ffffff; font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; vertical-align: baseline;">. Support via </span>
+                                <span class="zba48" style="font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; text-decoration: underline; vertical-align: baseline;">
+                                  <a class="zba49" href="https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_s-xclick%26hosted_button_id%3D8BBT5V55TGVXW%26source%3Durl&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw0fjN-inVErDXDV7ET8IQQ1" target="_blank">PayPal</a>
+                                </span>
+                                <span style="color: #ffffff; font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; vertical-align: baseline;"> and subscribe to my </span>
+                                <span class="zba48" style="font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; text-decoration: underline; vertical-align: baseline;">
+                                  <a class="zba49" href="https://www.youtube.com/channel/UCVLYt0tdEUii54n_xz9ZxEA/?sub_confirmation=1" target="_blank">YouTube channel</a>
+                                </span>
+                                <span style="color: #ffffff; font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; vertical-align: baseline;"> and my brand new </span>
+                                <span class="zba48" style="font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; text-decoration: underline; vertical-align: baseline;">
+                                  <a class="zba49" href="https://www.google.com/url?q=https%3A%2F%2Frumble.com%2Fc%2Fc-700227&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw0mEH3isbo2TtjS_mEuvpP0" target="_blank">channel on Rumble</a>
+                                </span>
+                                <span style="color: #ffffff; font-family: 'Times New Roman'; font-size: 13pt; font-weight: normal; vertical-align: baseline;">.</span>
+                              </small>
+                              <small id="x6" class="zba46" dir="ltr" style="display: block;"><br></small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="v2" class="zba33" style="">
+            <div class="zba36" style="background-size: cover;"></div>
+            <div class="zba37">
+              <div class="zba38" tabindex="-1">
 
-    <div class="topnav">
-      <a class="active" href="dd">Home</a>
-      <a href="cccc">News</a>
-      <a href="cccccc">Contact</a>
-      <a href="cccc">About</a>
-    </div>
+              </div>
+            </div>
+          </section>
+          <section id="v3" class="zba34" style="">
+            <div class="zba36" style="background-size: cover; background-position: center center; background-image: url(https://lh4.googleusercontent.com/322OnbWmoY9of7z-Omj0g9djksKJKLuZTvUc6LgXdFAJaXCinzzHmftupIxwRv_22BzFwGZftna8LTLiqqreOxsAuMd2lgqNoGOQpNlO_mCZJgk65iqVDkfBZypZ4rC1xIUGiAnzU6I=w16383);">
+              ::before
+            </div>
+            <div class="zba37">
+              <div class="zba38" tabindex="-1">
 
-     
+              </div>
+            </div>
+          </section>
+          <section id="v4" class="zba33" style="">
+            <div class="zba36" style="background-size: cover;"></div>
+            <div class="zba37">
+              <div class="zba38" tabindex="-1">
 
+              </div>              
+            </div>
+          </section>
+          <section id="v5" class="zba35" style="">
+            <div class="zba36" style="background-size: cover;"></div>
+            <div class="zba37">
+              <div class="zba38" tabindex="-1">
 
+              </div>              
+            </div>
+          </section>
+          <section id="v6" class="zba33" style="">
+            <div class="zba36" style="background-size: cover; background-position: center center; background-image: url(https://lh4.googleusercontent.com/CSJgjTHS1De12A5nkwWPA0kYeBiojhbjpFmfIBcoAtUXLX8r59lsJedq0w2jBLgxR8mHqNs50jcnPtQHLOvH2gqJ6uJyxvuZblTXKRqScOlYvsM20qtlBHp1NGBDdkOWANB0edmtErY=w16383);">
+              ::before
+            </div>
+            <div class="zba37">
+              <div class="zba38" tabindex="-1">
 
+              </div>
+            </div>
+          </section>
+          <section id="v7" class="zba33" style="">
+            <div class="zba36" style="background-size: cover; background-position: center center; background-image: url(https://lh3.googleusercontent.com/CUfPmYrnQboEfw88oEru3d8x6VTk051ZwvHWhDKRtvYzsVf6FtNHzHzz1CbTZ1eYuMey3NaFhrRGUKmf6hCUpEcwepL9Jg1DRw83kqBkDEMzLJPCvmvCJAZ4c22182R9CIJ6c7lqqZk=w16383);">
+              ::before
+            </div>
+            <div class="zba37">
+              <div class="zba38" tabindex="-1">
 
+              </div>
+            </div>
+          </section>
+          <section id="v8" class="zba33" style="">
+            <div class="zba36" style="background-size: cover; background-position: center center; background-image: url(https://lh4.googleusercontent.com/_ugBf9UpsFUK_1dPFtk_NtY9b3D4HMlRZwU7NwjVBQN8qlU1NUAsoeKr2gRh9XY-KLmuiJtzQs9TkqdlpBsMPh-nRatmnZj8uySmgycjzK06StbRixSuii0nssFlM-msStf_WKDxvA=w16383);">
+              ::before
+            </div>
+            <div class="zba37">
+              <div class="zba38" tabindex="-1">
+
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="zbb1" style="box-sizing: border-box;"></div>
+        <footer aria-hidden="false">
+
+      </div>
+    </div></div></div></div>
+    
   </body>
