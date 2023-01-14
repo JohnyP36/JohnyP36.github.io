@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url("../fonts/Oswald.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Caveat';
+  src: url("../fonts/Caveat.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Amarante';
+  src: url("../fonts/Amarante.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Aclonica';
+  src: url("../fonts/Aclonica.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url("../fonts/Comic.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  src: url("../fonts/Droid.woff2") format('woff2');
+}
