@@ -1,4 +1,4 @@
-const imageUrl =  null ;
+const imageUrl = 'images\/Handy Sites\/3934278fabcf6e59fe16f80948176f48.jpg';
   function bgImgLoaded() {
     if (!globals.headerBgImgLoaded) {
       globals.headerBgImgLoaded = new Date().getTime();
