@@ -1,10 +1,3 @@
-function sanitizeUrl(url) {
-    let u = decodeURI(url).trim().toLowerCase();
-    if (u.startsWith("javascript:") || u.startsWith("data:") || u.startsWith("vbscript:"))
-        return "about:blank";
-    return url;
-}
-
 var DOCS_timing={}; DOCS_timing['sl']=new Date().getTime();
 
 function _DumpException(e) {throw e;}
