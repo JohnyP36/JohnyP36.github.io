@@ -2,3 +2,36 @@
   @media only screen and (min-width: 480px) and (max-width: 767px) { .jW0mOd { font-size: 17.0pt; } }
   @media only screen and (min-width: 768px) and (max-width: 1279px) { .jW0mOd { font-size: 17.0pt; } }
   @media only screen and (min-width: 1280px) { .jW0mOd { font-size: 17.0pt; } }
+
+#h3 { background-color: transparent;
+      border: none;
+      line-height: 1.524;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      text-indent: 0; }
+#h3span { color: #0000ff;
+	  font-family: 'Amarante', 'Arial';
+	  vertical-align: baseline; }
+#small-left { display: block;
+	      margin-left: 15pt;
+	      padding-left: 0;
+	      text-indent: 0; }
+#small1-span { font-family: 'Times New Roman', 'Arial';
+	       font-size: 13pt;
+	       font-weight: normal;
+	       vertical-align: baseline; }
+#small-center { display: block;  
+		text-align: center;
+		padding-top: 5%; }
+#div-above-iframe { padding-top: 33%; }
+#above-iframe { padding-top: 100%; }
+#pspan-url { font-family: 'Courier New', 'Arial';
+ 	     font-size: 10pt;
+	     font-weight: normal;
+	     text-decoration: underline;
+	     vertical-align: baseline; }
+#pspan2 { font-size: 10pt;
+ 	  font-variant: normal;
+ 	  vertical-align: baseline; }
+
