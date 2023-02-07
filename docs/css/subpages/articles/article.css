@@ -14,7 +14,7 @@
 	  font-family: 'Amarante', 'Arial';
 	  vertical-align: baseline; }
 #small-left { display: block;
-	      margin-left: 15pt;
+	      margin-left: 0;
 	      padding-left: 0;
 	      text-indent: 0; }
 #small1-span { font-family: 'Times New Roman', 'Arial';
@@ -25,7 +25,7 @@
 		text-align: center;
 		padding-top: 5%; }
 #div-above-iframe { padding-top: 33%; }
-#above-iframe { padding-top: 100%; }
+#above-iframe { padding-top: 90%; }
 #pspan-url { font-family: 'Courier New', 'Arial';
  	     font-size: 10pt;
 	     font-weight: normal;
@@ -34,4 +34,3 @@
 #pspan2 { font-size: 10pt;
  	  font-variant: normal;
  	  vertical-align: baseline; }
-
