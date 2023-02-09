@@ -4,3 +4,4 @@
 *.js linguist-language=js linguist-detectable
 docs/ linguist-detectable
 docs/ -linguist-documentation
+docs/ -linguist-generated
