@@ -2,6 +2,5 @@
 *.html linguist-language=hmtl linguist-detectable
 *.xhtml linguist-language=hmtl linguist-detectable
 *.js linguist-language=js linguist-detectable
-docs/ linguist-detectable
-docs/ -linguist-documentation
-docs/ -linguist-generated
+docs/** linguist-detectable
+docs/** -linguist-documentation
