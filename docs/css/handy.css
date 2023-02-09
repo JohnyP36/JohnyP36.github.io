@@ -13,3 +13,31 @@
 
 section[id="h.2d469437870c1b1a_0"] .IFuOkc:before { opacity: 0.0; }
 section[id="h.2ae2110b4c077c87_163"] .IFuOkc:before { opacity: 0.4; }
+
+#section3-h2span { font-family: 'Roboto', 'Arial';
+		   text-decoration: underline; }
+#section3-ul { list-style-type: square;
+	       margin-left: 0;
+	       margin-right: 0;
+	       padding: 0; }
+#section3-li { margin-left: 15pt; }
+#section3-p { margin-left: 0;
+	      padding-left: 0;
+	      text-align: left;
+	      text-indent: 0; }
+#section5-h2span { color: #cc0000;
+		   font-family: 'Exo 2', 'Arial';
+		   text-decoration: underline;
+		   vertical-align: baseline; }
+#section5-span1 { color: #000000;
+		  font-family: 'Comfortaa', 'Arial';
+		  font-size: 13pt;
+		  font-style: normal;
+		  font-weight: 600;
+		  text-decoration: normal;
+		  vertical-align: baseline; }
+#section5-span2 { font-family: 'Arial';
+		  font-size: 11pt;
+		  font-weight: normal;
+		  text-decoration: underline;
+		  vertical-align: baseline; }
