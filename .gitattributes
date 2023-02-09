@@ -1,4 +1,4 @@
-*.css linguist-language=AdBlock linguist-detectable
+*.css linguist-language=css linguist-detectable
 *.html linguist-language=hmtl linguist-detectable
 *.xhtml linguist-language=hmtl linguist-detectable
 *.js linguist-language=js linguist-detectable
