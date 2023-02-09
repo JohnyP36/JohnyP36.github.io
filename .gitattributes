@@ -2,5 +2,6 @@ docs/** -linguist-documentation
 docs/** linguist-detectable
 *.xhtml linguist-language=hmtl linguist-detectable
 *.woff2 linguist-language=amfm linguist-detectable
+
 .github/** -linguist-documentation
-*.yaml linguist-language=cwl linguist-detectable
+*.yml linguist-language=cwl linguist-detectable
