@@ -1,3 +1,4 @@
-
-.github/** -linguist-documentation
-*.yml linguist-language=cwl linguist-detectable
+docs/** -linguist-documentation
+docs/** linguist-detectable
+*.xhtml linguist-language=hmtl linguist-detectable
+*.woff2 linguist-language=amfm linguist-detectable
