@@ -1,0 +1,403 @@
+body > header {
+  display: block;
+  box-sizing: border-box;
+}
+.message {
+  background-color: rgb(255, 229, 153);
+  position: fixed;
+  top: 0;
+  z-index: 21;
+  left: 0;
+  align-items: center;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  padding: 0 12px;
+  width: 100%;
+}
+.message > p {
+  color: rgb(0, 0, 0);
+  font-family: 'Droid Sans';
+  font-size: 13pt;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+.div-above-nav {
+  background-color: rgb(0, 0, 0);
+  padding-left: 16px;
+  padding-right: 16px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition: opacity 0.5s,padding-left .125s;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 20;
+}
+.div-above-nav2 {
+  display: table;
+  min-width: 100%;
+  table-layout: fixed;
+}
+.left-nav {
+  color: rgba(255,255,255,1);
+  font-family: 'Roboto Slab';
+  font-weight: 300;
+  font-size: 15pt; 
+  line-height: 1.4;
+  display: table-cell;
+  height: 56px;
+  max-width: 380px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.leftnav-a {
+  color: inherit;
+}
+.leftnav-img {
+  display: inline-block;
+  max-height: 56px;
+  max-width: 225px;
+  padding: 8px 4px 8px 12px;
+  vertical-align: middle;
+}
+.leftnav-span {
+  display: inline-block;
+  line-height: 1;
+  max-width: 380px;
+  outline: none;
+  overflow: hidden;
+  padding: 16px 12px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.navmain {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+}
+.navmain-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menuitem { 
+  display: inline-block;
+  max-width: 300px;
+  overflow: visible;
+  position: relative;
+  text-align: left;
+  transition: opacity 0ms 300ms;
+  vertical-align: middle;
+  white-space: nowrap;
+  height: 56px;
+}
+nav > ul > li > div:not(div.li-right):not(div.expand-menu):not(#expand):not(.li-div):not(div.expand-menu2) {
+  color: rgba(255,255,255,1);
+  border-bottom-color: rgba(255,255,255,0);
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  padding-top: 14px;
+  padding-bottom: 6px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Droid Sans';
+  font-weight: 700;
+  font-size: 12pt;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+  text-decoration: inherit;
+  font-style: inherit;
+}
+nav > ul > li > div:not(div.expand-menu):not(div.expand-menu2):hover, .div-after-li:hover, .li-div:hover {
+  opacity: 0.6;
+}
+nav > ul > li > div:not(div.expand-menu):not(#expand):not(.li-div):not(div.expand-menu2) > div {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+nav > ul > li > div:not(div.expand-menu):not(#expand):not(.li-div):not(div.expand-menu2) > div > a {
+  text-decoration: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: 28px;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 240px;
+  position: relative;
+  vertical-align: top;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  overflow: hidden;
+}
+.li-right {
+  background-color: transparent;
+  cursor: default;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 2px;
+}
+#expand {
+  line-height: 28px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 3px;
+  outline: none;
+  overflow: hidden;
+  padding-left: 4px;
+  padding-right: 2px;
+  vertical-align: top;
+}
+.expand-svg {
+  height: 12px;
+  transform: scale(2);
+  vertical-align: middle;
+  width: 12px;
+  overflow: hidden;
+}
+.expand-path {
+  transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.expand-menu {
+  display: none;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 28px !important;
+  padding: 8px 0;
+  border-radius: 2px;
+  left: -28px;
+  overflow-y: auto !important;
+  overflow: hidden;
+  position: absolute;
+  width: 240px;
+  box-shadow: 0 0 10px rgba(0,0,0,.55);
+}
+.menuitem2 { 
+  display: inline-block;
+  max-width: 300px;
+  overflow: visible;
+  position: relative;
+  text-align: left;
+  transition: opacity 0ms 300ms;
+  vertical-align: middle;
+  white-space: nowrap;
+  height: 56px;
+}
+.menuitem2:not( > .expand-menu):hover {
+ opacity: 0.6; 
+}
+.menuitem2:hover .expand-menu {
+  display: block; 
+}
+.expandmenu-ul {
+  list-style-type: none;
+  padding-left: 0;
+  transition: margin-top 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.expandmenu-li {
+  transition: height .3s;
+  overflow: hidden;
+}
+.div-after-li {
+  transition: padding-left .3s;
+  left: 0;
+  opacity: 1;
+  padding-left: 32px;
+  padding-right: 10px;
+  margin-top: 20px;
+  color: rgba(255,255,255,1);
+  font-family: 'Droid Sans';
+  font-weight: 700;
+  font-size: 12pt;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: inherit;
+  font-style: inherit;
+}
+.above-a-divafterli {
+  position: relative;
+}
+.a-divafterli {
+  text-decoration: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-family: 'Droid Sans';
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-left: 0px;
+  display: inline-block;
+  max-width: 90%;
+  white-space: nowrap;
+  position: relative;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width:767px) { .menu { display: none; } }
+
+@media only screen and (max-width: 767px) {
+.navmain {
+  display: none;
+}
+.menu {
+  background-color: rgb(0, 0, 0);
+  color: rgba(255,255,255,1);
+  top: 0;
+  right: 0;
+  transition-delay: 1s;
+  transition-duration: 0s;
+  transition-property: z-index;
+  z-index: 25;
+  right: 0;
+  position: fixed;
+  cursor: pointer;
+  height: 55px;
+  outline: none;
+  padding: 16px 12px;
+  width: 48px;
+}
+.svg#menu {
+  overflow: hidden;
+  transition: transform 0.45s cubic-bezier(0.4,0,0.2,1);
+  height: 24px;
+  width: 24px;
+}
+.menu:hover .navmainmenu {
+  right: 0;
+}
+.navmainmenu {
+  display: block;
+  background-color: rgb(0, 0, 0);
+  margin-top: 0;
+  padding-bottom: 64px;
+  transition: right 0.5s cubic-bezier(0.4,0,0.2,1);
+  right: -100%;
+  height: 100%;
+  max-width: 80%;
+  overflow-y: auto;
+  position: fixed;
+  z-index: 70;
+  padding-top: 0px;
+  width: 250px;
+}
+#first { transition-delay: 0.125s !important; padding-top: 12px; }
+#second { transition-delay: 0.175s !important; }
+#third { transition-delay: 0.225s !important; }
+#fourth { transition-delay: 0.275s !important; }
+#fifth { transition-delay: 0.325s !important; }
+.li-div {
+  padding-left: 36px;
+  transition: left 0.375s cubic-bezier(0.4,0,1,1),opacity 0.375s cubic-bezier(0.4,0,1,1);
+  left: 0;
+  opacity: 1;
+  font-size: 12pt;
+  margin-top: 20px;
+  color: rgba(255,255,255,1);
+  font-weight: 700;
+  font-family: 'Droid Sans';
+  padding-right: 10px;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: inherit;
+  font-style: inherit;
+}
+#selected {
+  border-bottom-width: 7px;
+  border-bottom-color: rgba(95,182,149,1);
+  border-bottom-style: solid;
+}
+.a-menu {
+  margin-left: 4px;
+  padding-left: 0px;
+  white-space: normal;
+  text-decoration: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-family: 'Droid Sans';
+  margin-right: 12px;
+  display: inline-block;
+  max-width: 90%;
+  position: relative;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  overflow: hidden;
+  vertical-align: middle;
+}
+#li2:hover .expand-menu2 {
+  display: block; 
+}
+.expand2 {
+  left: -32px;
+  bottom: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  outline: none;
+  padding-left: 12px;
+  position: absolute;
+  transform: translateY(50%);
+  width: 36px;
+}
+.expand2-svg {
+  overflow: hidden:
+  height: 24px;
+  width: 24px;
+}
+#li2:hover .expand2-svg {
+  display: none;
+}
+#li2:hover .expand3-svg {
+  display: block;
+}
+.expand3-svg {
+  display: none;
+  overflow: hidden:
+  height: 24px;
+  width: 24px;
+}
+.expand2-path {
+ transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.expand-menu2 {
+  display: none;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  position: relative;
+}
+
+div.bg {
+  transition: opacity 0.5s;
+  background-color: black;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 0;
+}
+.menu:hover div.bg {
+  opacity: .6;
+  width: 90%;
+  z-index: 0;
+}
+
+}
