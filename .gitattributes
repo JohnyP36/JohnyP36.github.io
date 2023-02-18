@@ -3,6 +3,4 @@
 docs/** -linguist-documentation
 docs/** linguist-detectable
 *.xhtml linguist-language=hmtl linguist-detectable
-*.woff2 linguist-language=acfm linguist-detectable
-*.jpg linguist-language=css linguist-detectable
-*.png linguist-language=hmtl linguist-detectable
+*.woff2 linguist-language=css linguist-detectable
