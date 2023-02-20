@@ -248,6 +248,11 @@ nav > ul > li > div:not(div.expand-menu):not(#expand):not(.li-div):not(div.expan
   overflow: hidden;
   vertical-align: middle;
 }
+#selected {
+  border-bottom-width: 7px;
+  border-bottom-color: rgba(95,182,149,1);
+  border-bottom-style: solid;
+}
 
 @media only screen and (min-width:767px) { .menu { display: none; } }
 
@@ -317,11 +322,6 @@ nav > ul > li > div:not(div.expand-menu):not(#expand):not(.li-div):not(div.expan
   white-space: nowrap;
   text-decoration: inherit;
   font-style: inherit;
-}
-#selected {
-  border-bottom-width: 7px;
-  border-bottom-color: rgba(95,182,149,1);
-  border-bottom-style: solid;
 }
 .a-menu {
   margin-left: 4px;
