@@ -24,7 +24,25 @@
 #small-center { display: block;  
 		text-align: center;
 		padding-top: 5%; }
-#div-above-iframe { padding-top: 33%; }
+#div-above-iframe { padding-top: 33%; } /* can be removed */
+.download { background-color: silver;
+	    color: white;
+	    border: 4px solid lightgreen;
+	    padding: 14%;
+	    width: 100%;
+	    display: inline-block;
+	    text-align: center;
+	    border-radius: 75px;
+	    font-size: 16pt;
+	    box-shadow: 0 8px 16px 0 red, 0 6px 20px 0 blue;
+	    text-decoration-color: darkgoldenrod;
+	    transition-duration: 1.4s; }
+.download:hover { box-shadow: none; 
+		  color: black; 
+		  opacity: 0.6; 
+		  cursor: alias; 
+		  font-size: 21pt;
+		  padding: 12.5%;} 
 #above-iframe { padding-top: 90%; }
 #pspan-url { font-family: 'Courier New', 'Arial';
  	     font-size: 10pt;
