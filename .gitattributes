@@ -3,5 +3,4 @@
 docs/** -linguist-documentation
 docs/** linguist-detectable
 *.xhtml linguist-language=hmtl linguist-detectable
-*.mhtml linguist-language=html linguist-detectable
 *.woff2 linguist-language=css linguist-detectable
