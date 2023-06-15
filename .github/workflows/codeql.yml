@@ -13,13 +13,11 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ "main" ]
   create: 
     branches: 
     - main
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ main ]
     types: [opened, edited, reopened]
   release:
     types: [created, edited, published, released]
