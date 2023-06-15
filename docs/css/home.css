@@ -16,3 +16,36 @@ section[id="h.2ae2110b4c077c87_25"] .IFuOkc:before { opacity: 0.0; }
 section[id="h.2ae2110b4c077c87_76"] .IFuOkc:before { opacity: 0.0; }
 section[id="h.2ae2110b4c077c87_90"] .IFuOkc:before { opacity: 0.0; }
 section[id="h.76bd044f8cf7a797_0"] .IFuOkc:before { opacity: 0.0; }
+
+table.TMjjoe:not(.TYR86d) {
+  display: grid
+}
+table[id="h.skjdznbeope"] {
+  justify-content: center;
+  line-height: 1.4 !important;
+}
+table[id="h.skjdznbeope"] td {
+  width: 175px;
+  text-align: center;
+  color: #004281; 
+  font-family: 'Comic Sans MS', 'Arial'; 
+  font-size: 13pt; 
+  font-weight: normal; 
+  vertical-align: baseline;
+}
+table[id="h.skjdznbeope"] td > .url {
+  color: #004281; 
+  text-decoration: underline; 
+  vertical-align: baseline;
+}
+table[id="h.skjdznbeope"].mobile {
+  display: none;
+}
+@media only screen and (max-width: 1140px) {
+  table[id="h.skjdznbeope"]:not(.mobile) {
+    display: none;
+  }
+  table[id="h.skjdznbeope"].mobile {
+    display: grid;
+  }
+}
