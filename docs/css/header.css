@@ -421,18 +421,21 @@ nav > ul > li > div:not(div.expand-menu):not(#expand):not(.li-div):not(div.expan
       white-space: normal;
     }
     nav.navmain .navmain-ul {
-      padding: revert;
+      margin-left: -15px;
+      margin-right: -15px;
     }  
     nav.navmain .menuitem {
-      height: 30px;
+      height: 31px;
     }
     nav.navmain .menuitem2 {
-      height: 30px;
+      height: 31px;
     }
     nav.navmain > ul > li > div:not(div.li-right):not(div.expand-menu):not(#expand):not(.li-div):not(div.expand-menu2) {
       border-bottom-width: 3px;
       padding-top: 0px;
       padding-bottom: 0px;
+      margin-left: 5px;
+      margin-right: 5px;
     }
     nav.navmain > ul > li > div:not(div.expand-menu):not(#expand):not(.li-div):not(div.expand-menu2) > div > a {
       font-size: 10pt;
