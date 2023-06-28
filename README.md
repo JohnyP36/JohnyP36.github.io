@@ -1,9 +1,10 @@
-# JohnyP36.github.io
+# Favorite Sites
 
 This is my website. Click [here](https://johnyp36.github.io/) to see it.
 
-I need some help with transfering my website [Favorite Sites](https://sites.google.com/view/fav-sites) to Github pages.  
-It costs me a lot of time, which I don't have. 
+~I need some help with transfering my website [Favorite Sites](https://sites.google.com/view/fav-sites) to Github pages.~  
+I have successfully transferred my site to a github page. A lot of the code, however, is not human readable and needs to be simplified. Also as some code is unnecessary extensive.  
+This costs me a lot of time, which I don't have. 
 ##### So please help with a PR or opening issues
 
 
