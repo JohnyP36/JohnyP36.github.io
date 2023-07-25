@@ -97,7 +97,7 @@ section.header > .header-text {
 .intro .abovetext {
   display: inline-block;
   padding: 8px;
-  position relative;
+  position: relative;
   word-wrap: break-word;
   white-space: normal;
   margin: 0 1.25% 0 1.25%;
