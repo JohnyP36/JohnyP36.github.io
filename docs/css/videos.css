@@ -29,7 +29,7 @@ body > div * {
   flex: 0 0 auto;
   outline: none;
 }
-section.header {
+section.header, section.intro {
   background-size: cover;
   display: table;
   position: relative;
@@ -37,8 +37,9 @@ section.header {
   width: 100%;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
+  background-color: rgb(255, 255, 255);
 }
-section.header::before, section.header > .img::before {
+section.header::before, section.header > .img::before, .abovetext > small::before {
   content: "";
   display: none;
   top: 0;
@@ -68,7 +69,7 @@ section.header > .header-text {
   max-width: 1280px;
   margin: 0 auto 0 auto;
   text-align: center;
-  white-space: pre-wrap;
+  white-space: normal;
 }
 .header-text > div {
   box-sizing: border-box;
@@ -86,6 +87,41 @@ section.header > .header-text {
   vertical-align: baseline;
   line-height: 1.25;
   font-size: 60.0pt;
+}
+.intro > div {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0px 48px 0 48px;
+  margin: 0 auto 0 auto;
+  text-align: left;
+}
+.intro .abovetext {
+  display: inline-block;
+  padding: 8px;
+  position: relative;
+  word-wrap: break-word;
+  white-space: normal;
+  margin: 0 1.25% 0 1.25%;
+}
+.abovetext > small {
+  display: block;
+  font-size: 9pt;
+  position: relative;
+  font-family: 'Times New Roman', 'Arial'; 
+  font-weight: normal; 
+  line-height: 1.2;
+}
+.abovetext > small .smallh1 {
+  font-family: 'Oswald', 'Arial'; 
+  font-size: 18pt; 
+  color: rgba(33,33,33,1);
+}
+.abovetext .maintext {
+  font-size: 13pt;
+}
+span.count {
+  color: #666666; 
+  font-size: 13pt; 
 }
 
 section#section:first-child .mYVXT {
@@ -121,7 +157,7 @@ section#section:first-child .mYVXT {
 }
 
 @media only screen and (max-width: 767px) {
-  section.header {
+  section.header, section.intro {
     padding-bottom: 0rem !important;
     padding-top: 0rem ! important;
   }
@@ -133,5 +169,8 @@ section#section:first-child .mYVXT {
   }
   .header-text .span {
     font-size: 40.0pt;
+  }
+  .intro > div {
+    padding: 1.5rem 3.75% 1.5rem 3.75%;
   }
 }
