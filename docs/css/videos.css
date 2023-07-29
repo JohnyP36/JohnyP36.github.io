@@ -57,6 +57,9 @@ section.header::before, section.header > .img::before, .abovetext > small::befor
   width: 100%;
   pointer-events: none;
   position: absolute;
+  border-bottom-color: rgba(95,182,149,1);
+  border-bottom-style: ridge;
+  border-bottom-width: 10px;
 }
 section.header > .img::before {
   display: block !important;
@@ -67,7 +70,7 @@ section.header > .header-text {
   padding: 56px 48px 0 48px;
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 10px auto;
   text-align: center;
   white-space: normal;
 }
