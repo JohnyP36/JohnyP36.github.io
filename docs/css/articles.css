@@ -29,7 +29,7 @@ body > div * {
   flex: 0 0 auto;
   outline: none;
 }
-section.header, section.intro {
+section.header, section.intro, section.socials {
   background-size: cover;
   display: table;
   position: relative;
@@ -133,6 +133,41 @@ hr.line {
   margin: 8px 13.5% 8px 13.5%;
   border-color: transparent;
 }
+section.socials {
+  background-color: initial;
+  white-space: nowrap;
+}
+.socials > div {
+  width: 100%;
+  margin: -1.5rem auto -1.5rem auto;
+  padding: 0 77.5px 0 77.5px;
+  max-width: 95%;
+  background-color: rgb(228, 174, 98);
+  border-color: rgb(228, 174, 98);
+  border-top-width: 22.5px;
+  border-bottom-width: 22.5px;
+  border-style: solid;
+  border-radius: 33px;
+}
+.socials .text {
+  width: 25%;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  padding: 8px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.text > p {
+  font-family: 'Comic Sans MS', 'Arial';
+  font-size: 13pt;
+  line-height: 1.55;
+  color: rgba(33,33,33,1);
+  margin: 0;
+}
+
 
 #h3 { background-color: transparent;
       border: none;
@@ -191,7 +226,7 @@ hr.line {
   .header-text .span {
     font-size: 40.0pt;
   }
-  .intro > div {
+  .intro > div, .socials > div {
     padding: 1.5rem 3.75% 1.5rem 3.75%;
   }
   hr.line {
