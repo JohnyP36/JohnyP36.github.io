@@ -125,6 +125,14 @@ span.count {
   color: #666666; 
   font-size: 13pt; 
 }
+hr.line {
+  background-color: rgba(193,196,195,1);
+  height: 3px;
+  max-width: 1280px;
+  padding: 0 48px 0 48px;
+  margin: 8px 13.5% 8px 13.5%;
+  border-color: transparent;
+}
 
 #h3 { background-color: transparent;
       border: none;
@@ -185,5 +193,8 @@ span.count {
   }
   .intro > div {
     padding: 1.5rem 3.75% 1.5rem 3.75%;
+  }
+  hr.line {
+    margin: 12px 5% 12px 5%;
   }
 }
