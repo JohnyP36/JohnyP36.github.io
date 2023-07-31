@@ -64,13 +64,13 @@ section.header::before, section.header > .img::before, .abovetext > small::befor
 section.header > .img::before {
   display: block !important;
   background-color: rgba(33,33,33,1);
-  opacity: 0.3;
+  opacity: 0.4;
 }
 section.header > .header-text {
-  padding: 56px 48px 0 48px;
+  padding: 22px 48px 22px 48px;
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto 10px auto;
+  margin: 56px auto 10px auto;
   text-align: center;
   white-space: normal;
 }
@@ -168,6 +168,11 @@ section#section:first-child .mYVXT {
 }
 
 @media only screen and (max-width: 767px) {
+  @media (pointer: coarse) {
+    section.header > .header-text {
+      margin-top: 85px;
+    }
+  }
   section.header, section.intro {
     padding-bottom: 0rem !important;
     padding-top: 0rem ! important;
