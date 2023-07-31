@@ -129,9 +129,10 @@ span.count {
 hr.line {
   background-color: rgba(193,196,195,1);
   height: 3px;
+  width: 73%;
   max-width: 1280px;
   padding: 0 48px 0 48px;
-  margin: 8px 13.5% 8px 13.5%;
+  margin: 8px auto 8px auto;
   border-color: transparent;
 }
 section.socials {
@@ -225,7 +226,7 @@ section#section:first-child .mYVXT {
     padding: 1.5rem 3.75% 1.5rem 3.75%;
   }
   hr.line {
-    margin: 12px 5% 12px 5%;
+    width: 90%;
   }
   section.socials > div {
     display: flex;
