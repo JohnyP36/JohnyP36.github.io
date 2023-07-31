@@ -149,7 +149,7 @@ section.socials {
   border-style: solid;
   border-radius: 33px;
 }
-.socials .text {
+.socials .element {
   width: 25%;
   box-sizing: border-box;
   display: inline-block;
@@ -160,7 +160,7 @@ section.socials {
   word-wrap: break-word;
   white-space: normal;
 }
-.text > p {
+.element > p {
   font-family: 'Comic Sans MS', 'Arial';
   font-size: 13pt;
   line-height: 1.55;
