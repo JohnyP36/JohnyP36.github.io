@@ -29,7 +29,7 @@ body > div * {
   flex: 0 0 auto;
   outline: none;
 }
-section.header, section.intro, section.socials {
+section.header, section.intro, section.socials, footer {
   background-size: cover;
   display: table;
   position: relative;
@@ -90,14 +90,14 @@ section.header > .header-text {
   line-height: 1.25;
   font-size: 60.0pt;
 }
-.intro > div {
+.intro > div, footer > div {
   width: 100%;
   max-width: 1280px;
   padding: 0px 48px 0 48px;
   margin: 0 auto 0 auto;
   text-align: left;
 }
-.intro .abovetext {
+.intro .abovetext, footer .abovetext {
   display: inline-block;
   padding: 8px;
   position: relative;
@@ -134,7 +134,7 @@ hr.line {
   margin: 8px auto 8px auto;
   border-color: transparent;
 }
-section.socials {
+section.socials, footer {
   background-color: initial;
   white-space: nowrap;
 }
@@ -167,6 +167,27 @@ section.socials {
   line-height: 1.55;
   color: rgba(33,33,33,1);
   margin: 0;
+}
+footer .abovetext {
+  background-color: rgba(255, 255, 255, 1);
+  width: 97.5%;
+  font-family: Roboto Slab;
+  font-size: 9pt;
+  line-height: 1.2;
+  text-align: center;
+  white-space: pre-wrap;
+}
+footer .abovetext a {
+  color: inherit;
+}
+footer .abovetext small {
+  color: #000000;
+  font-family: 'Aclonica', 'Arial';
+  margin-top: 1.2px;
+}
+footer .abovetext small a {
+  color: #0b5394;
+  text-decoration: none;
 }
 
 section.a-grey, section.a-white {
@@ -232,47 +253,6 @@ p.origin:nth-of-type(2) {
   text-indent: 0;
   line-height: 1.55;
 }
-#h3 { 
-  background-color: transparent;
-  border: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  text-indent: 0;
-}
-#h3span {
-  line-height: 1.5;
-	color: #0000ff;
-	font-family: 'Amarante', 'Arial';
-	font-size: 17pt;
-	vertical-align: baseline;
-}
-#p1 { background-color: transparent;
-      border: none;
-      line-height: 1.8599999999999999;
-      margin: 0; 
-      margin-top: 11pt;
-      padding: 0;
-      text-align: left;
-      text-indent: 0; 
-      font-family: 'Architects Daughter', 'Arial';
-      color: #000000;
-      font-size: 13pt;
-      text-decoration: normal; }
-#p1span { text-decoration: underline;
-	  vertical-align: baseline; }
-#p2 { background-color: transparent;
-      border: none;
-      line-height: 1.8599999999999999;
-      margin: 0pt;
-      padding: 0;
-      text-align: right;
-      text-indent: 0;
-      font-family: 'Architects Daughter', 'Arial';
-      color: #000000;
-      font-size: 13pt;
-      text-decoration: normal; }
-
 
 @media only screen and (max-width: 767px) {
   @media (pointer: coarse) {
@@ -280,7 +260,7 @@ p.origin:nth-of-type(2) {
       margin-top: 85px;
     }
   }
-  section.header, section.intro {
+  section.header, section.intro, footer {
     padding-bottom: 0rem !important;
     padding-top: 0rem ! important;
   }
@@ -293,7 +273,7 @@ p.origin:nth-of-type(2) {
   .header-text .span {
     font-size: 40.0pt;
   }
-  .intro > div, .socials > div {
+  .intro > div, .socials > div, footer > div {
     padding: 1.5rem 3.75% 1.5rem 3.75%;
   }
   hr.line {
