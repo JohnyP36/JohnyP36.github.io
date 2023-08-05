@@ -29,7 +29,7 @@ body > div * {
   flex: 0 0 auto;
   outline: none;
 }
-section.header, section.intro, section.socials {
+section.header, section.intro, section.socials, footer {
   background-size: cover;
   display: table;
   position: relative;
@@ -91,14 +91,14 @@ section.header > .header-text {
   line-height: 1.25;
   font-size: 60.0pt;
 }
-.intro > div {
+.intro > div, footer > div {
   width: 100%;
   max-width: 1280px;
   padding: 0px 48px 0 48px;
   margin: 0 auto 0 auto;
   text-align: left;
 }
-.intro .abovetext {
+.intro .abovetext, footer .abovetext {
   display: inline-block;
   padding: 8px;
   position: relative;
@@ -135,7 +135,7 @@ hr.line {
   margin: 8px auto 8px auto;
   border-color: transparent;
 }
-section.socials {
+section.socials, footer {
   background-color: initial;
   white-space: nowrap;
 }
@@ -159,8 +159,8 @@ section.socials {
   vertical-align: middle;
   text-align: center;
   padding: 8px;
+  margin: -1.25rem 0 -1.25rem 0;
   word-wrap: break-word;
-  white-space: normal;
 }
 .element > p {
   font-family: 'Comic Sans MS', 'Arial';
@@ -169,7 +169,27 @@ section.socials {
   color: rgba(33,33,33,1);
   margin: 0;
 }
-
+footer .abovetext {
+  background-color: rgba(255, 255, 255, 1);
+  width: 97.5%;
+  font-family: Roboto Slab;
+  font-size: 9pt;
+  line-height: 1.2;
+  text-align: center;
+  white-space: pre-wrap;
+}
+footer .abovetext a {
+  color: inherit;
+}
+footer .abovetext small {
+  color: #000000;
+  font-family: 'Aclonica', 'Arial';
+  margin: 3px 0 -3px 0;
+}
+footer .abovetext small a {
+  color: #0b5394;
+  text-decoration: none;
+}
 
 section#section:first-child .mYVXT {
   padding-top: 0 !important;
@@ -209,7 +229,7 @@ section#section:first-child .mYVXT {
       margin-top: 85px;
     }
   }
-  section.header, section.intro {
+  section.header, section.intro, footer {
     padding-bottom: 0rem !important;
     padding-top: 0rem ! important;
   }
@@ -222,7 +242,7 @@ section#section:first-child .mYVXT {
   .header-text .span {
     font-size: 40.0pt;
   }
-  .intro > div {
+  .intro > div, .socials > div, footer > div {
     padding: 1.5rem 3.75% 1.5rem 3.75%;
   }
   hr.line {
@@ -236,6 +256,7 @@ section#section:first-child .mYVXT {
   }
   .element {
     width: 50% !important;
+    margin: 0 !important;
   }
   .element:nth-of-type(2) {
     margin-bottom: 2%;
@@ -248,7 +269,7 @@ section#section:first-child .mYVXT {
     padding-right: 0 !important;
   }
   .element:nth-of-type(2) {
-    margin-bottom: 15%;
+    margin-bottom: 15% !important;
   }
   .element > div {
     margin: 0 !important; 
