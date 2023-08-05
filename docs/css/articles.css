@@ -1,16 +1,3 @@
-  @media only screen and (max-width: 479px) { .afVDVd { font-size: 40.0pt; } }
-  @media only screen and (min-width: 480px) and (max-width: 767px) { .afVDVd { font-size: 51.0pt; } }
-  @media only screen and (min-width: 768px) and (max-width: 1279px) { .afVDVd { font-size: 60.0pt; } }
-  @media only screen and (min-width: 1280px) { .afVDVd { font-size: 60.0pt; } }
-  @media only screen and (max-width: 479px) { .KB0Tx { font-size: 18.0pt; } }
-  @media only screen and (min-width: 480px) and (max-width: 767px) { .KB0Tx { font-size: 19.0pt; } }
-  @media only screen and (min-width: 768px) and (max-width: 1279px) { .KB0Tx { font-size: 20.0pt; } }
-  @media only screen and (min-width: 1280px) { .KB0Tx { font-size: 20.0pt; } }
-  @media only screen and (max-width: 479px) { .jW0mOd { font-size: 16.0pt; } }
-  @media only screen and (min-width: 480px) and (max-width: 767px) { .jW0mOd { font-size: 17.0pt; } }
-  @media only screen and (min-width: 768px) and (max-width: 1279px) { .jW0mOd { font-size: 17.0pt; } }
-  @media only screen and (min-width: 1280px) { .jW0mOd { font-size: 17.0pt; } }
-
 body {
   height: 100%;
   padding: 0;
@@ -158,8 +145,8 @@ section.socials, footer {
   vertical-align: middle;
   text-align: center;
   padding: 8px;
+  margin: -1.25rem 0 -1.25rem 0;
   word-wrap: break-word;
-  white-space: normal;
 }
 .element > p {
   font-family: 'Comic Sans MS', 'Arial';
@@ -183,7 +170,7 @@ footer .abovetext a {
 footer .abovetext small {
   color: #000000;
   font-family: 'Aclonica', 'Arial';
-  margin-top: 1.2px;
+  margin: 3px 0 -3px 0;
 }
 footer .abovetext small a {
   color: #0b5394;
@@ -287,6 +274,7 @@ p.origin:nth-of-type(2) {
   }
   .element {
     width: 50% !important;
+    margin: 0;
   }
   .element:nth-of-type(2) {
     margin-bottom: 2%;
@@ -309,7 +297,7 @@ p.origin:nth-of-type(2) {
     padding-right: 0 !important;
   }
   .element:nth-of-type(2) {
-    margin-bottom: 15%;
+    margin-bottom: 15% !important;
   }
   .element > div {
     margin: 0 !important; 
