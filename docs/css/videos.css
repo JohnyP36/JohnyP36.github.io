@@ -235,7 +235,7 @@ section.v-white {
 .description {
   width: 33.333333%;
 }
-h3 {
+h3.descr-header {
   color: #0000ff;
   font-family: 'Amarante', 'Arial';
   font-weight: 400;
@@ -261,7 +261,7 @@ h3 {
   color: inherit;
   text-decoration: underline;
 }
-.content p, .content2 p {
+.content > .ltt-main, .content2 > .ltt {
   margin: 0;
 }
 .content2 {
@@ -304,7 +304,7 @@ section#section:first-child .mYVXT {
   line-height: 1.55;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 795px) {
   @media (pointer: coarse) {
     section.header > .header-text {
       margin-top: 85px;
@@ -357,7 +357,7 @@ section#section:first-child .mYVXT {
   .video > * {
     max-width: 500px;
   }
-  h3 {
+  h3.descr-header {
     padding-top: 1.5rem;
   }
   .content2 {
