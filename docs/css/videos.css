@@ -60,6 +60,16 @@ section.header::before, section.header > .img::before, .abovetext > small::befor
   border-bottom-color: rgba(95,182,149,1);
   border-bottom-style: ridge;
   border-bottom-width: 10px;
+  animation: move-img;
+  animation-timeline: scroll();
+}
+@keyframes move-img {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(1000px);
+  }
 }
 section.header > .img::before {
   display: block !important;
@@ -191,6 +201,77 @@ footer .abovetext small a {
   text-decoration: none;
 }
 
+section.a-grey, section.a-white {
+  background-size: cover;
+  display: table;
+  position: relative;
+  table-layout: fixed;
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+}
+section.a-grey {
+  background-color: rgb(214, 214, 214);
+}
+section.a-white {
+  background-color: rgb(249, 249, 249);
+}
+.a-grey > div, .a-white > div {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 48px 0 48px;
+  margin: 0 auto 0 auto;
+  white-space: nowrap;
+}
+.video, .description {
+  width: 66.666667%;
+  display: inline-block;
+  padding: 0 1.25% 0 1.25%;
+  position: relative;
+  vertical-align: top;
+}
+.video > * {
+  width: 100%;
+}
+.description {
+  width: 33.333333%;
+}
+h3 {
+  color: #0000ff;
+  font-family: 'Amarante', 'Arial';
+  font-weight: 400;
+  font-size: 17.0pt;
+  line-height: 1.27;
+  padding: 15px 8px 20px 4px;
+  margin: 0;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.description > .content, .content2 {
+  color: rgba(0,0,0,1);
+  font-family: 'Architects Daughter', 'Arial';
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 13pt;
+  line-height: 1.55;
+  padding: 8px 8px 8px 4px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.content a {
+  color: inherit;
+  text-decoration: underline;
+}
+.content p, .content2 p {
+  margin: 0;
+}
+.content2 {
+  padding: 10% 0 0 4px;
+}
+.ltt-time {
+  font-family: 'Arial';
+  font-size: 12.5pt;
+}
+
 section#section:first-child .mYVXT {
   padding-top: 0 !important;
 }
@@ -261,6 +342,28 @@ section#section:first-child .mYVXT {
   .element:nth-of-type(2) {
     margin-bottom: 2%;
   }
+  
+  .a-grey > div, .a-white > div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 5px 0.5rem 5px;
+  }
+  .video, .description {
+    width: 100%;
+  }
+  .video {
+    margin-left: 10%;
+  }
+  .video > * {
+    max-width: 500px;
+  }
+  h3 {
+    padding-top: 1.5rem;
+  }
+  .content2 {
+    padding-top: 0 !important;
+    margin-top: 5%;
+  }
 }
 @media only screen and (max-width: 479px) {
   .element {
@@ -276,5 +379,12 @@ section#section:first-child .mYVXT {
   }
   .element > p {
     margin: 0 !important;
+  }
+  
+  .video {
+    margin: 0 !important;
+  }
+  .content2 {
+    margin-top: 10%;
   }
 }
