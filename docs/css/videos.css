@@ -1,16 +1,3 @@
-  @media only screen and (max-width: 479px) { .afVDVd { font-size: 40.0pt; } }
-  @media only screen and (min-width: 480px) and (max-width: 767px) { .afVDVd { font-size: 51.0pt; } }
-  @media only screen and (min-width: 768px) and (max-width: 1279px) { .afVDVd { font-size: 60.0pt; } }
-  @media only screen and (min-width: 1280px) { .afVDVd { font-size: 60.0pt; } }
-  @media only screen and (max-width: 479px) { .KB0Tx { font-size: 18.0pt; } }
-  @media only screen and (min-width: 480px) and (max-width: 767px) { .KB0Tx { font-size: 19.0pt; } }
-  @media only screen and (min-width: 768px) and (max-width: 1279px) { .KB0Tx { font-size: 20.0pt; } }
-  @media only screen and (min-width: 1280px) { .KB0Tx { font-size: 20.0pt; } }
-  @media only screen and (max-width: 479px) { .jW0mOd { font-size: 16.0pt; } }
-  @media only screen and (min-width: 480px) and (max-width: 767px) { .jW0mOd { font-size: 17.0pt; } }
-  @media only screen and (min-width: 768px) and (max-width: 1279px) { .jW0mOd { font-size: 17.0pt; } }
-  @media only screen and (min-width: 1280px) { .jW0mOd { font-size: 17.0pt; } }
-
 body {
   height: 100%;
   padding: 0;
@@ -369,6 +356,11 @@ section#section:first-child .mYVXT {
   .content2 {
     padding-top: 0 !important;
     margin-top: 5%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 930px) {
+  .description {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 479px) {
