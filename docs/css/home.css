@@ -216,7 +216,7 @@ section.sites {
   /*! padding-left: 1.25%; */
   /*! padding-right: 1.25%; */
   max-width: 1280px;
-  margin: 0 -0.33% 0 -0.33%;
+  margin: 0 -0.29%;
 }
 .sites .center > div {
   position: relative;
@@ -233,6 +233,7 @@ section.sites {
   line-height: 1.2;
   color: #004281;
   text-align: center;
+  white-space: normal;
 }
 table.sitesgrid {
   display: grid;
