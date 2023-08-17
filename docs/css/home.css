@@ -179,7 +179,7 @@ section.sites {
   position: relative;
 }
 .sites .images {
-  vertical-align: middle;
+  vertical-align: bottom;
   border: 7.5px solid rgba(95,182,149,1);
 }
 .sites img {
@@ -188,11 +188,12 @@ section.sites {
 }
 .images .under-image {
   background-color: rgba(95,182,149,1);
-  margin: 0 0 -7px 0;
+  margin: 0;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.25;
   font-family: 'Caveat', 'Arial';
   font-size: 24pt;
+  white-space: normal;
 }
 .images .under-image > a {
   color: blue;
@@ -215,8 +216,8 @@ section.sites {
   width: 80%;
   /*! padding-left: 1.25%; */
   /*! padding-right: 1.25%; */
-  max-width: 1280px;
-  margin: 0 -0.29%;
+  max-width: 1300px;
+  margin: 0 -0.25%;
 }
 .sites .center > div {
   position: relative;
@@ -250,6 +251,7 @@ table.sitesgrid td {
   font-size: 13pt; 
   font-weight: normal; 
   vertical-align: baseline;
+  white-space: normal;
 }
 table.sitesgrid td > .url {
   color: #004281; 
@@ -341,6 +343,9 @@ p.listname.bottom {
   }
   .sites > div {
     padding: 0 3.75%;
+  }
+  .sites table.sitesgrid.mobile td {
+    white-space: nowrap;
   }
   .sites-mobile > div {
     display: flex;
