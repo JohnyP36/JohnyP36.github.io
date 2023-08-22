@@ -51,11 +51,18 @@ section.header::before, section.header > .img::before, .abovetext > small::befor
   animation-timeline: scroll();
 }
 @keyframes move-img {
-  from {
+  0% {
     transform: translateY(0);
   }
-  to {
+  30% {
+    opacity: 1;
+  }
+  30.1% {
+    opacity: 0;
+  }
+  100% {
     transform: translateY(1000px);
+    opacity: 0;
   }
 }
 section.header > .img::before {
