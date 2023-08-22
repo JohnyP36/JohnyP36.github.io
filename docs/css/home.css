@@ -286,7 +286,7 @@ section.youtube {
   line-height: 0;
 }
 .ytvideo > iframe {
-  min-height: 420px;
+  aspect-ratio: 1920/1080;
   width: 100%;
 }
 .ytvideo > .listname {
@@ -378,7 +378,7 @@ p.listname.bottom {
     max-width: 600px;
   }
   .ytvideo > iframe {
-    min-height: 275px;
+    /*! max-height: 275px; */
   }
   .ytvideo > p.listname.mobile {
     margin: 0;
