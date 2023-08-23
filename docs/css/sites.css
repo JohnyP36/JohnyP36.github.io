@@ -16,7 +16,7 @@ body > div * {
   flex: 0 0 auto;
   outline: none;
 }
-section.header, section.intro, section.socials, section.websites1, section.header-a, footer {
+section.header, section.intro, section.socials, section.websites1, section.header-a, section.audio-video, footer {
   background-size: cover;
   display: table;
   position: relative;
@@ -103,7 +103,7 @@ section.header > .header-text, section.header-a > .header-text {
   font-family: 'Cabin Sketch', 'Arial';
   font-size: 24.0pt;
 }
-.intro > div, .websites1 > div, footer > div {
+.intro > div, .websites1 > div, .audio-video > div, footer > div {
   width: 100%;
   max-width: 1280px;
   padding: 0px 48px 0 48px;
@@ -166,7 +166,7 @@ hr.line {
   margin: 8px auto 8px auto;
   border-color: transparent;
 }
-section.socials, footer {
+section.socials, section.audio-video, footer {
   background-color: initial;
   white-space: nowrap;
 }
@@ -326,6 +326,143 @@ section.header-a .header-text > div > h1 {
   line-height: 1.25;
   font-size: 48.0pt;
 }
+section.audio-video .desc-left, section.audio-video .desc-right {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 33.3333333%;
+}
+.desc-right {
+  width: 66.6666667% !important;
+}
+.desc-left > div {
+  background-clip: content-box;
+  padding: 0 3.75%;
+  background-color: rgba(255,255,255,1);
+}
+.desc-left > div > img {
+  width: 100%;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+.desc-left > div > ul {
+  padding: 11px 8px 14px 8px;
+  margin: 0;
+  list-style-type: square;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.desc-left > div > ul > li {
+  margin: 6px 0 0 20px;
+  line-height: 1.55;
+  font-family: 'Droid Sans';
+  font-size: 13pt;
+  color: rgba(33,33,33,1);
+  text-align: left;
+}
+.desc-left > div > ul > li::marker {
+  line-height: 0;
+}
+.desc-left > div > ul > li:nth-of-type(1) {
+  margin-top: 0;
+}
+.desc-left > div > ul > li:nth-of-type(3) {
+  color: #efefef !important;
+}
+.desc-left > div > ul > li:nth-of-type(3)::marker {
+  color: rgba(33,33,33,1);
+}
+.desc-left > div > ul > li:nth-of-type(3) > a {
+  color: inherit;
+}
+.desc-left > div > ul > li p {
+  font-size: 11pt;
+  margin-top: inherit;
+  margin-bottom: 0;
+  line-height: 1.85;
+}
+.desc-right > div {
+  padding: 0 1.25%;
+  padding-right: 2.5%;
+}
+.desc-right .click {
+  padding-top: 3.75%;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+}
+.click.top {
+  padding-top: 0;
+}
+.click > div {
+  background-color: rgba(255,255,255,0);
+  position: relative;
+  width: 100%;
+}
+.click > div > .even[aria-label], .click > div > .odd[aria-label] {
+  color: rgba(33,33,33,1);
+  font-family: 'Droid Sans';
+  font-size: 13pt;
+  line-height: 22px;
+  user-select: none;
+  transition: background .2s .1s;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  height: 36px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 0;
+}
+.click > div > .even[aria-label] {
+  background-color: rgba(95,182,149,1);
+  border-color: rgba(95,182,149,1);
+}
+.click .even:hover {
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+}
+.click > div > .odd[aria-label] {
+  background-color: transparent;
+  border-color: rgba(33,33,33,1);
+}
+.click .odd a:hover {
+  background-color: rgba(33,33,33,0.1000000015);
+}
+.click .even > a, .click .odd > a {
+  display: block;
+  outline: none;
+  text-decoration: none;
+  width: 100%;
+  color: inherit;
+}
+.click .even > a > p, .click .odd > a > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 12px;
+}
+.click .even > a > div, .click .odd > a > div {
+  transform: translate(-50%,-50%) scale(0);
+  transition: opacity .2s ease,visibility 0s ease .2s,-webkit-transform 0s ease .2s;
+  background-size: cover;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  background-image: radial-gradient(circle farthest-side,rgba(0,0,0,.12),rgba(0,0,0,.12) 80%,transparent 100%);
+}
 
 @media only screen and (max-width: 930px) {
   @media (pointer: coarse) {
@@ -333,7 +470,7 @@ section.header-a .header-text > div > h1 {
       margin-top: 85px;
     }
   }
-  section.header, section.intro, section.websites1, section.header-a, footer {
+  section.header, section.intro, section.websites1, section.header-a, section.audio-video, footer {
     padding-bottom: 0rem !important;
     padding-top: 0rem !important;
   }
@@ -346,7 +483,7 @@ section.header-a .header-text > div > h1 {
   .header-text .span:nth-of-type(1) {
     font-size: 40.0pt;
   }
-  .intro > div, .socials > div, .websites1 > div, footer > div {
+  .intro > div, .socials > div, .websites1 > div, section.audio-video > div, footer > div {
     padding: 1.5rem 3.75% 1.5rem 3.75%;
   }
   hr.line {
@@ -377,6 +514,19 @@ section.header-a .header-text > div > h1 {
   section.header-a .header-text > div > h1 {
     font-size: 33.0pt;
   }
+  section.audio-video > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .audio-video .desc-left {
+    width: 66.66667% !important;
+    max-width: 544px;
+    padding-bottom: 1.5rem; 
+  }
+  .audio-video .desc-right {
+    width: 95% !important;
+  }
 }
 @media only screen and (max-width: 479px) {
   .element {
@@ -402,5 +552,11 @@ section.header-a .header-text > div > h1 {
   section.header-a .img-a {
     left: 0.75%;
     width: 98.5%;
+  }
+  section.audio-video .desc-left, section.audio-video .desc-right {
+    width: 100% !important;
+  }
+  .desc-left > div, .desc-right > div {
+    padding: 0 1.875%;
   }
 }
