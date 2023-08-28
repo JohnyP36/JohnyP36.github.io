@@ -57,14 +57,14 @@ section.header::before, section.header > .img::before, .abovetext > small::befor
   0% {
     transform: translateY(0);
   }
-  30% {
+  13% {
     opacity: 1;
   }
-  30.1% {
+  13.1% {
     opacity: 0;
   }
   100% {
-    transform: translateY(1000px);
+    transform: translateY(2000px);
     opacity: 0;
   }
 }
@@ -333,7 +333,7 @@ section.audio-video .desc-left, section.audio-video .desc-right {
   vertical-align: top;
   width: 33.3333333%;
 }
-.desc-right {
+.desc-right#av {
   width: 66.6666667% !important;
 }
 .desc-left > div {
@@ -341,7 +341,7 @@ section.audio-video .desc-left, section.audio-video .desc-right {
   padding: 0 3.75%;
   background-color: rgba(255,255,255,1);
 }
-.desc-left > div > img {
+.desc-left > div img {
   width: 100%;
   border: 0;
   position: relative;
@@ -368,24 +368,28 @@ section.audio-video .desc-left, section.audio-video .desc-right {
 .desc-left > div > ul > li:nth-of-type(1) {
   margin-top: 0;
 }
-.desc-left > div > ul > li:nth-of-type(3) {
+.desc-left > div > ul > li#avl {
   color: #efefef !important;
 }
-.desc-left > div > ul > li:nth-of-type(3)::marker {
+.desc-left > div > ul > li#avl::marker {
   color: rgba(33,33,33,1);
 }
-.desc-left > div > ul > li:nth-of-type(3) > a {
+.desc-left > div > ul > li#avl > a {
   color: inherit;
 }
-.desc-left > div > ul > li p {
+.desc-left > div > ul > li#avl2 p {
   font-size: 11pt;
   margin-top: inherit;
   margin-bottom: 0;
-  line-height: 1.85;
+  line-height: 1.5;
 }
 .desc-right > div {
   padding: 0 1.25%;
   padding-right: 2.5%;
+}
+.desc-right > div#ma {
+  padding: 0 2.25%;
+  padding-right: 3.5%;
 }
 .desc-right .click {
   padding-top: 3.75%;
@@ -395,7 +399,10 @@ section.audio-video .desc-left, section.audio-video .desc-right {
   vertical-align: top;
   width: 100%;
 }
-.click.top {
+.desc-right > div#ma .click {
+  padding-top: 7.5%;
+}
+.click.top, .desc-right > div#ma .click.top {
   padding-top: 0;
 }
 .click > div {
@@ -463,6 +470,25 @@ section.audio-video .desc-left, section.audio-video .desc-right {
   visibility: hidden;
   background-image: radial-gradient(circle farthest-side,rgba(0,0,0,.12),rgba(0,0,0,.12) 80%,transparent 100%);
 }
+.desc-left#ma-right > div {
+  padding: 0 5.25%;
+  padding-left: 2.75%;
+}
+#ma-right > div > p {
+  display: block;
+  position: relative;
+  white-space: normal;
+  padding: 8px 8px 14px 8px;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto Slab';
+  font-size: 9pt;
+  line-height: 1.2;
+  color: rgba(33,33,33,1);
+}
+#ma-right > div > p > a {
+  color: inherit;
+}
 
 @media only screen and (max-width: 930px) {
   @media (pointer: coarse) {
@@ -524,8 +550,23 @@ section.audio-video .desc-left, section.audio-video .desc-right {
     max-width: 544px;
     padding-bottom: 1.5rem; 
   }
-  .audio-video .desc-right {
+  .audio-video .desc-right#av {
     width: 95% !important;
+  }
+  .audio-video .desc-right:not(#av) {
+    width: 66.66667%;
+  }
+  .desc-right > div#ma {
+    padding: 0 3.75%;
+  }
+  .desc-right > div#ma .click:not(.top) {
+    padding-top: 5%;
+  }
+  .desc-left#ma-right {
+    padding: 0;
+  }
+  .desc-left#ma-right > div {
+    padding: 1.5rem 3.75% 0 3.75%;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -556,7 +597,10 @@ section.audio-video .desc-left, section.audio-video .desc-right {
   section.audio-video .desc-left, section.audio-video .desc-right {
     width: 100% !important;
   }
-  .desc-left > div, .desc-right > div {
+  .desc-left > div, .desc-right > div#ma {
     padding: 0 1.875%;
+  }
+  .desc-right#av > div {
+    padding: 0;
   }
 }

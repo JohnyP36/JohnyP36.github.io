@@ -254,11 +254,11 @@ nav > ul > li > div:not(div.expand-menu):not(#expand):not(.li-div):not(div.expan
   border-bottom-style: solid;
 }
 
-@media only screen and (min-width:767px) { 
+@media only screen and (min-width:650px) { 
   .menu { display: none; }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 650px) {
   .message > p {
     font-size: 9.5pt;
     text-align: center;
@@ -408,12 +408,12 @@ nav > ul > li > div:not(div.expand-menu):not(#expand):not(.li-div):not(div.expan
 }
 
 @media (pointer: coarse) {
-  @media only screen and (min-width:767px) { 
+  @media only screen and (min-width:650px) { 
     nav.navmain #expand {
       display: none;
     }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 650px) {
     .menu { 
       display: none; 
     }
