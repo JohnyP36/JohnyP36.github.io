@@ -81,7 +81,7 @@ section.downloads > div > div {
   margin-left: 15px;
 }
 .downloads .left > p > a {
-  color: inherit;
+  color: #4a86e8;
 } 
 .downloads .center {
   vertical-align: middle;
@@ -221,6 +221,12 @@ footer .abovetext small a {
   .downloads .left p {
     background-clip: content-box;
     background-color: rgba(250,235,215,.7);
+  }
+  #url {
+    margin-left: 0;
+  }
+  .downloads .left > p {
+    padding-right: 8px !important;
   }
   .downloads .center {
     padding: 0;
