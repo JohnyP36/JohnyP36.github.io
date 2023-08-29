@@ -51,7 +51,9 @@ section.header::before, section.header > .img::before, .abovetext > small::befor
   border-bottom-style: ridge;
   border-bottom-width: 10px;
   animation: move-img;
+  animation-duration: 1ms;
   animation-timeline: scroll();
+  animation-direction: alternate;
 }
 @keyframes move-img {
   0% {

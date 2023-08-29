@@ -1,0 +1,251 @@
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(antiquewhite 45%, darkslategray 50%, darkslategray 90%, antiquewhite);
+}
+body > div {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+body > div * {
+  box-sizing: border-box;
+}
+.main {
+  flex: 0 0 auto;
+  outline: none;
+}
+section.head, section.downloads, section.embed, footer {
+  background-size: cover;
+  display: table;
+  position: relative;
+  table-layout: fixed;
+  width: 100%;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+section.head > div, section.downloads > div, section.embed > div, footer > div {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0px 48px 0 48px;
+  margin: 0 auto 0 auto;
+  text-align: left;
+}
+section.head > div {
+  padding-top: 56px;
+}
+section.head > div > div, section.embed > div > div {
+  padding: 0 1.25%;
+}
+section.head > div h3 {
+  background-color: rgba(255,255,255,1);
+  border: none;
+  margin: 0;
+  padding: 8px;
+  position: relative;
+  text-align: center;
+  text-indent: 0;
+  color: #0000ff;
+	font-family: 'Amarante';
+  font-size: 17.0pt;
+  font-weight: 400;
+  line-height: 1.524;
+  vertical-align: baseline;
+  word-wrap: break-word;
+}
+section.downloads > div > div {
+  display: inline-block;
+  position: relative;
+  width: 41%;
+  vertical-align: super;
+  padding: 0 3%;
+}
+.downloads .left {
+  padding-left: 1.5%;
+}
+.downloads .left > p {
+  font-family: 'Times New Roman', 'Arial';
+  font-size: 13pt;
+  color: rgba(33,33,33,1);
+  line-height: 1.25;
+  word-wrap: break-word;
+  padding: 8px;
+  margin: 0;
+}
+#reason {
+  padding-bottom: 0;
+}
+#url {
+  padding-top: 0;
+  margin-left: 15px;
+}
+.downloads .left > p > a {
+  color: inherit;
+} 
+.downloads .center {
+  vertical-align: middle;
+  width: 16.66666667% !important;
+}
+.center a:hover {
+  cursor: grab;
+}
+.download { background-color: silver;
+	    color: white;
+	    border: 4px solid lightgreen;
+	    padding: 11.5%;
+	    width: 100%;
+	    display: inline-block;
+	    text-align: center;
+	    border-radius: 75px;
+	    font-size: 16pt;
+	    box-shadow: 0 8px 16px 0 red, 0 6px 20px 0 blue;
+	    text-decoration-color: darkgoldenrod;
+	    transition-duration: 1.4s; }
+.download:hover { box-shadow: none; 
+		  color: black; 
+		  opacity: 0.6; 
+		  cursor: alias; 
+		  font-size: 21pt;
+		  padding: 10.75%;} 
+
+section.embed > div {
+  padding: 0;
+  max-width: 1480px;
+}
+section.embed .source, section.embed .websource {
+  display: inline-block;
+  position: relative;
+  padding: 14px 16px;
+  background-color: rgba(255,255,255,1);
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+}
+section.embed .source {
+  display: block;
+  max-width: 1155px;
+  margin: 0 auto;
+}
+.source p {
+  margin: 0;
+  font-family: 'Droid Sans';
+  color: rgba(33,33,33,1);
+  font-size: 13pt;
+  line-height: 1.55;
+}
+.source p:nth-of-type(2) {
+  margin-top: 14px;
+  font-size: 10.0pt;
+}
+.source p > a {
+  color: inherit;
+  font-family: 'Courier New';
+  font-size: 10pt;
+  font-weight: normal;
+  text-decoration: underline;
+  vertical-align: baseline;
+}
+section.embed .websource {
+  padding: 0;
+  line-height: 0;
+  height: 100%;
+  width: 100%;
+}
+.websource > iframe {
+  width: 100%;
+  aspect-ratio: 1/0.9;
+}
+footer {
+  background-color: rgba(233,237,235,1);;
+  white-space: nowrap;
+}
+footer .abovetext {
+  display: inline-block;
+  padding: 8px;
+  position: relative;
+  word-wrap: break-word;
+  white-space: normal;
+  margin: 0 1.25% 0 1.25%;
+  background-color: rgba(255, 255, 255, 1);
+  width: 97.5%;
+  font-family: Roboto Slab;
+  font-size: 9pt;
+  line-height: 1.2;
+  text-align: center;
+  white-space: pre-wrap;
+}
+footer .abovetext a {
+  color: inherit;
+}
+footer .abovetext > small {
+  display: block;
+  font-size: 9pt;
+  position: relative;
+  font-family: 'Aclonica'; 
+  font-weight: normal; 
+  line-height: 1.2;
+  color: #000000;
+  margin: 3px 0 -3px 0;
+}
+footer .abovetext small a {
+  color: #0b5394;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 930px) {
+  section.head, section.embed, footer {
+    padding-bottom: 0rem !important;
+    padding-top: 0rem !important;
+  }
+  section.head > div, section.embed > div, footer > div {
+    padding: 1.5rem 3.75% 1.5rem 3.75%;
+  }
+  section.head > div {
+    margin-top: 3.5rem;
+  }
+  section.downloads > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  section.downloads > div > div {
+  }
+  .downloads .left {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    padding-left: 3%;
+  }
+  .downloads .left p {
+    background-clip: content-box;
+    background-color: rgba(250,235,215,.7);
+  }
+  .downloads .center {
+    padding: 0;
+  }
+  .downloads .right {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  @media (pointer: coarse) {
+    section.head > div {
+      margin-top: 85px !important;
+    }
+  }
+  section.downloads > div > div {
+    width: 100% !important;
+  }
+  .downloads .center {
+    padding: 1.5rem 0;
+    width: 33% !important;
+  }
+  .downloads .right {
+    padding: 0 !important;
+  }
+  .websource > iframe {
+    aspect-ratio: 1/1.5;
+  }
+}

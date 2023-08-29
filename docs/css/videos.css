@@ -48,7 +48,9 @@ section.header::before, section.header > .img::before, .abovetext > small::befor
   border-bottom-style: ridge;
   border-bottom-width: 10px;
   animation: move-img;
+  animation-duration: 1ms;
   animation-timeline: scroll();
+  animation-direction: alternate;
 }
 @keyframes move-img {
   0% {
@@ -267,38 +269,6 @@ h3.descr-header {
 .ltt-time {
   font-family: 'Arial';
   font-size: 12.5pt;
-}
-
-section#section:first-child .mYVXT {
-  padding-top: 0 !important;
-}
-#section {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-#div-above-iframe {
-  margin-top: -35px;
-  margin-bottom: -35px;
-}
-#div-2above-jsr {
-  margin-top: 0;
-  margin-bottom: -53px;
-}
-#rumble-js {
-  height: 89%;
-}
-#h3span-right {
-  color: #0000ff;
-  font-family: 'Amarante', 'Arial';
-  vertical-align: baseline; 
-}
-#pspan-right {
-  font-family: 'Architects Daughter', 'Arial';
-  font-variant: normal;
-  font-weight: normal;
-  color: rgba(0,0,0,1);
-  font-size: 13pt;
-  line-height: 1.55;
 }
 
 @media only screen and (max-width: 930px) {
