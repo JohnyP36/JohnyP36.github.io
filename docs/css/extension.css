@@ -195,7 +195,7 @@ section.statement .abovetext h2 {
   font-family: 'PT Sans';
   font-variant: normal;
   font-size: 21.0pt;
-  font-weight: 300;
+  /*! font-weight: 300; */
   line-height: 1.75;
 }
 .statement .privacy {

@@ -78,19 +78,17 @@ section.header > .img::before {
   font-weight: normal;
   color: rgba(255,255,255,1);
   line-height: 1.55;
-  margin: 0 0 15.5px 0;
+  margin: 0 0 20px 0;
 }
 .abovetext > small.maintext {
   display: block;
+  margin: 0 0 10px 0;
   font-size: 13pt;
   position: relative;
   font-family: 'Times New Roman', 'Arial'; 
   font-weight: normal; 
   line-height: 1.2;
   color: rgba(255,255,255,1);
-}
-small.maintext:nth-of-type(2) {
-  margin: 28px 0 14px 0;
 }
 small.maintext a {
   color: rgba(255,255,255,1);
