@@ -241,6 +241,11 @@ table.sitesgrid {
   border-collapse: collapse;
   border-spacing: 0;
 }
+table.sitesgrid tr {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+}
 table.sitesgrid td {
   width: 175px;
   text-align: center;
