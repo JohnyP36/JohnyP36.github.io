@@ -56,14 +56,14 @@ section.header::before, section.header > .img::before, .abovetext > small::befor
   0% {
     transform: translateY(0);
   }
-  30% {
+  25% {
     opacity: 1;
   }
-  30.1% {
+  25.1% {
     opacity: 0;
   }
   100% {
-    transform: translateY(1000px);
+    transform: translateY(700px);
     opacity: 0;
   }
 }
@@ -196,13 +196,12 @@ footer .abovetext small a {
   text-decoration: none;
 }
 
-section.a-grey, section.a-white {
-  background-size: cover;
+section.table {
   display: table;
   position: relative;
   table-layout: fixed;
   width: 100%;
-  padding: 0.25rem;
+  padding: 1.25rem 0.25rem;
 }
 section.a-grey {
   background-color: rgb(214, 214, 214);
@@ -210,20 +209,39 @@ section.a-grey {
 section.a-white {
   background-color: rgb(249, 249, 249);
 }
-.a-grey > div, .a-white > div {
+.table > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1500px;
   padding: 0px 48px 0 48px;
   margin: 0 auto 0 auto;
 }
-.a-grey .abovetext, .a-white .abovetext {
-  width: 97.5%;
-  display: inline-block;
+.table .abovetext {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  outline: 2px solid grey;
   padding: 8px;
   position: relative;
   word-wrap: break-word;
   white-space: normal;
-  margin: 0 1.25% 0 1.25%;
+}
+.table .abovetext > div {
+  width: 200%;
+}
+.a-white {
+  background-color: rgb(249, 249, 249);
+}
+.a-grey {
+  background-color: rgb(214, 214, 214);
+}
+.table .abovetext:nth-last-child(1):not(.odd) {
+  grid-column: 1/span 2;
+  display: grid;
+  max-width: 50%;
+  margin: 1.75px auto 0;
 }
 .link {
   margin: 0;
@@ -233,31 +251,30 @@ section.a-white {
   line-height: 1.55;
 	color: rgb(0, 0, 255);
 	font-family: 'Amarante', 'Arial';
-	font-size: 17pt;
+	font-size: 16pt;
 	font-weight: 400;
+  width: 100%;
 }
 .link > a {
   color: inherit;
   text-decoration: none;
 }
 p.origin {
-  line-height: 1.86;
-  margin: 11pt 0 0 0; 
+  line-height: 1.55;
+  margin: 0; 
   padding: 0;
-  text-align: left;
-  text-indent: 15px; 
+  text-align: right;
   font-family: 'Architects Daughter', 'Arial';
   color: #000000;
-  font-size: 13pt;
+  font-size: 12pt;
+  text-indent: 0;
+  width: 100%;
 }
 p.origin > a {
   color: inherit;
 }
-p.origin:nth-of-type(2) {
-  margin: 0;
-  text-align: right;
-  text-indent: 0;
-  line-height: 1.55;
+.table .abovetext:nth-last-child(1):not(.odd) > div {
+  width: 100%;
 }
 
 @media only screen and (max-width: 930px) {
@@ -299,13 +316,17 @@ p.origin:nth-of-type(2) {
     margin-bottom: 2%;
   }
   
-  section.a-grey > div, section.a-white > div {
+  section.table > div {
+    display: inline-block;
     padding: 0 3.75% 0 3.75%;
   }
-  p.origin:nth-of-type(1), p.origin:nth-of-type(2) {
-    line-height: 1.25;
+  .table .abovetext:nth-last-child(1):not(.odd) {
+    display: flex;
+    max-width: 100%;
+    margin: 0;
   }
-  p.origin:nth-of-type(2) {
+  p.origin {
+    line-height: 1.25;
     margin: 7pt 0 5pt 0;
   }
 }
