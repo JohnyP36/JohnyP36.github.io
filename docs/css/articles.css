@@ -226,13 +226,19 @@ section.table {
 .table .abovetext > div {
   width: 200%;
 }
-.a-white {
+.table .abovetext {
+  background-color: rgb(249, 249, 249);
+}
+.table .abovetext:nth-of-type(4n + 1), .table .abovetext:nth-of-type(4n - 4) {
+  background-color: rgb(214, 214, 214);
+}
+/*.a-white {
   background-color: rgb(249, 249, 249);
 }
 .a-grey {
   background-color: rgb(214, 214, 214);
-}
-.table .abovetext:nth-last-child(1):not(.odd) {
+}*/
+.table .abovetext:nth-child(2n + 1):last-of-type {
   grid-column: 1/span 2;
   display: grid;
   max-width: 50%;
@@ -314,6 +320,12 @@ p.origin > a {
   section.table > div {
     display: inline-block;
     padding: 0 3.75% 0 3.75%;
+  }
+  .table .abovetext.m1 {
+    background-color: rgb(214, 214, 214) !important;
+  }
+  .table .abovetext.m2 {
+    background-color: rgb(249, 249, 249) !important;
   }
   .table .abovetext:nth-last-child(1):not(.odd) {
     display: flex;
