@@ -1,13 +1,14 @@
-/*::-webkit-scrollbar {
-  width: 17px;
+/*Normal width Edge is 17px */
+::-webkit-scrollbar {
+  width: 11px;
   background: rgb(252, 252, 252);
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgb(139, 139, 139)
-}*/
+}
 html {
-  scrollbar-width: thin;
-  scrollbar-color: rgb(139, 139, 139) rgb(252, 252, 252);
+  scrollbar-width: thin !important;
+  scrollbar-color: rgb(139, 139, 139) rgb(252, 252, 252) !important;
 }
 
 body > header {
