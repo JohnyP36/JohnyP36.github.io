@@ -1,3 +1,15 @@
+/*::-webkit-scrollbar {
+  width: 17px;
+  background: rgb(252, 252, 252);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(139, 139, 139)
+}*/
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(139, 139, 139) rgb(252, 252, 252);
+}
+
 body > header {
   display: block;
   box-sizing: border-box;
