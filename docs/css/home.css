@@ -405,6 +405,9 @@ p.listname.bottom {
   }
 }
 @media only screen and (max-width: 479px) {
+  section.header {
+    margin-top: 32px;
+  }
   .element {
     width: 100% !important;
     padding-left: 0 !important;

@@ -4,6 +4,7 @@
   <link href="css/header.css" rel='stylesheet' type='text/css'>
   <link href="css/home.css" rel='stylesheet' type='text/css'>
   <link href="fonts/css-fonts/home.css" rel='stylesheet' type='text/css'>
+  <link href="css/home-notification.css" rel='stylesheet'>
   <title>Favorite sites</title>
   <link rel="icon" href="images/tabbar%20icon.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,8 +17,7 @@
  <div>
  
   <header>
-    <div class="message"><p>Please note that this site works the best on a computer (1920x1080p).</p></div>
-    <div class="div-above-nav" style="top: 32px !important;">
+    <div class="div-above-nav">
       <div class="div-above-nav2">
         <div class="left-nav"><a class="leftnav-a" href="/"><img class="leftnav-img" src="images/icon.jpg" aria-label="Site home"><span class="leftnav-span">Favorite sites</span></a></div>
         <nav class="navmain">
@@ -61,7 +61,7 @@
   </header>
     
   <div class="main" tabindex="-1"dir="ltr">
-    <section class="header" style="margin-top: 32px;">
+    <section class="header">
       <div style="background-size: cover; background-position: center top; background-image: url(images/Home/behind.jpg);" class="img"></div>
       <div class="intro-home">
         <div tabindex="-1">
@@ -234,5 +234,19 @@
   </footer>
   
  </div>
+ <script src="script/home-notification.js"></script>
+ <script>
+   const notification = new Notification({
+     text: 'Please note that this site works the best on a computer (1920x1080p).',
+     position: 'top-center',
+     style: {
+       background: 'rgb(255, 229, 153)',
+       color: 'rgb(0, 0, 0)',
+     },
+     canClose: true,
+     showProgress: false,
+     autoClose: false,
+   });
+ </script>
 </body>
 </html>
