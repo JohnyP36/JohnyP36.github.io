@@ -192,7 +192,7 @@ footer .abovetext a {
   color: inherit;
 }
 footer .abovetext small {
-  color: #000000;
+  color: rgb(255, 255, 255);
   font-family: 'Aclonica', 'Arial';
   margin: 3px 0 -3px 0;
 }

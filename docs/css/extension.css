@@ -176,7 +176,7 @@ footer .abovetext small {
   position: relative;
   font-weight: normal; 
   line-height: 1.2;
-  color: #000000;
+  color: rgb(255, 255, 255);
   font-family: 'Aclonica', 'Arial';
   margin: 3px 0 -3px 0;
 }
