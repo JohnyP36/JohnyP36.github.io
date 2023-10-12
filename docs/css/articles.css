@@ -174,8 +174,12 @@ section.socials, footer {
   color: rgba(33,33,33,1);
   margin: 0;
 }
+footer {
+  background-color: rgb(0, 0, 0);
+}
 footer .abovetext {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(0, 0, 0);
+  color: rgba(255,255,255,1);
   width: 97.5%;
   font-family: Roboto Slab;
   font-size: 9pt;
@@ -192,7 +196,8 @@ footer .abovetext small {
   margin: 3px 0 -3px 0;
 }
 footer .abovetext small a {
-  color: #0b5394;
+  /*color: #0b5394;*/
+  color: rgba(126, 189, 246, 0.75);
   text-decoration: none;
 }
 

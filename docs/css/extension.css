@@ -154,8 +154,12 @@ section.statement .abovetext, footer .abovetext {
   white-space: normal;
   margin: 0 1.25% 0 1.25%;
 }
+footer {
+  background-color: rgb(0, 0, 0);
+}
 footer .abovetext {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(0, 0, 0);
+  color: rgba(255,255,255,1);
   width: 97.5%;
   font-family: Roboto Slab;
   font-size: 9pt;
@@ -177,7 +181,8 @@ footer .abovetext small {
   margin: 3px 0 -3px 0;
 }
 footer .abovetext small a {
-  color: #0b5394;
+  /*color: #0b5394;*/
+  color: rgba(126, 189, 246, 0.75);
   text-decoration: none;
 }
 
