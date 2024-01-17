@@ -21,15 +21,15 @@
 <!-- Just a description of the issue when you visit the site. Or steps on reproducing this  -->
 
 ### Additional information 
-<!-- Put here which browser(s) you are using and whih version, and what the device is: desktop or mobile. 
+<!-- Put here which browser(s) you are using and whih version, and what the device is: desktop or mobile. -->
 <!-- delete the "e.g." and put between the "**...**" or "_**...**_ your own information. Change the number of your browser version if it's not 101 --> 
 | Browser name & version | Device | Operating System |
 | :---                   |       :---:       |             ---: |
-| \`e.g. **MS Edge** 101\`   | \`e.g. _**Desktop**_\`| \`e.g. **Windows 10**, 21H2\` | 
+| e.g. **`MS Edge`** `101`   | e.g. _**`Desktop`**_| e.g. **`Windows 10`**, `21H2` | 
 
 #### Screenshot(s)
-<!-- [Screenshot(s) for difficult to describe visual issues are **mandatory**.
-<summary>Screenshot(s)</summary>
+<!-- [Screenshot(s) for difficult to describe visual issues are **mandatory**.] -->
+<details><summary>Screenshot(s)</summary>
     
 <!-- drag-and-drop screenshot here (make sure the '<!--' before after this line are deleted) -->
     
